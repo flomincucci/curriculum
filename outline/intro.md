@@ -13,103 +13,104 @@ http://clojurebridge.github.io/curriculum/outline/intro.html
 {% endcomment %}
 
 <section>
-Introduction to Programming with Clojure
+Introducción a la Programación en Clojure
 ----------------------------------------
 {: .slide-title .chapter}
 
-* Why Clojure?
-* What is Clojure good at?
-* What does Clojure look like?
+* ¿Por qué Clojure?
+* ¿En qué es bueno Clojure?
+* ¿A qué se parece Clojure?
     - Comments
-* What is a REPL?
-* REPL in action
+* Qué es un REPL?
+* REPL en acción
 </section>
 
 <section ng-controller="NarrativeController">
-## Why Clojure?
+## ¿Por qué Clojure?
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block11" ng-click="block11=!block11">Intro</button>
 
-> If you've never programmed before, you may not know that there are
-> many languages to choose from. Some of the other languages you might
-> have heard of (or will hear of!) are C, JavaScript, Python, and
+> si vos no programate antes, puede que no sepas que hay muchos lenguages 
+> de donde elegir. Puede de que hayas escuchado de otros lenguajes
+>  (o escucharas de ellos!) como C, JavaScript, Python y
 > Java.
 {: ng-show="block11" .description}
 
-> So why are we teaching Clojure? Although it's not as popular as any
-> of those languages, we're using Clojure because of three qualities
-> it has that make it an ideal first language to learn--or a great
-> language to learn in addition to others you might already know:
+> Entonces ¿por qué estamos enseñanado Clojure? Porque no es popular
+> como alguno de estos lenguajes, estamos usando Clojure por tres cualidades
+> que tiene que lo hace ideal como primer lenguage para aprender--o un gran
+> lenguaje para aprender en adicción a otros que tal vez ya sabes:
 {: ng-show="block11" .description}
 
-#### Clojure is _simple_ <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
+#### Clojure es _simple_ <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
 
-> Clojure is _simple_. That's not to say it's not powerful; it is. The
-> number of concepts you have to know to program in Clojure is very
-> small, however, and easy to grasp. Clojure grows with you as you
-> learn it, and you can be very productive with a small subset of the
-> language.
+> Clojure es _simple_. Esto no quiere decir que no sea poderoso; lo es. El
+> el número de concepto que tienes que saber para programar en Clojure es muy
+> pequeño, however, y fácil de entender. Clojure crece con vos mientras lo
+> estas aprendiendo, y puedes ser muy productivo con un pequeño subset del
+> lenguaje.
 {: ng-show="block12" .description}
 
-#### Clojure is _all-purpose_ <button class="link" ng-bind-html="details" ng-model="block13" ng-click="block13=!block13"></button>
+#### Clojure es de _proposito-general_ <button class="link" ng-bind-html="details" ng-model="block13" ng-click="block13=!block13"></button>
 
-> Clojure is _all-purpose_. Some languages have a specific focus.
-> JavaScript, for example, was traditionally used only in web pages
-> (although that's changed somewhat). Objective-C is used mainly for
-> iPhone apps. We're going to make a drawing application today, but
-> you can use Clojure for any sort of application easily.
+> Clojure es de _proposito-general_. Algunnos lenguajes tienen un foco específico.
+> JavaScript, por ejemplo, fue tradicionalmente usado solo en páginas web
+> (aunque eso a cambiado de alguna manera). Objective-C es usado principalmente 
+> para applicaciones iPhone. Hoy vamos a hacer una applicación para dibujar, pero
+> puedes usar Clojure para cualquier tipo de applicación facilmente.
 {: ng-show="block13" .description}
 
-#### Clojure is _fun_ <button class="link" ng-bind-html="details" ng-model="block14" ng-click="block14=!block14"></button>
+#### Clojure es _diversión_ <button class="link" ng-bind-html="details" ng-model="block14" ng-click="block14=!block14"></button>
 
-> Clojure is _fun_. That's a matter of opinion, of course, but we
-> think it holds true. I hope that during this course you experience
-> the joy of seeing a Clojure program come together and do something
-> powerful and surprising.
+> Clojure es _diversión_. Eso es una cuestión de opinión, of course, pero
+> pensamos que es verdad. Espero que durante este curso experimenten
+> La alegria de ver un programa hecho en Clojure ejecutarse y hacer algo 
+> poderoso y sorprendente.
 {: ng-show="block14" .description}
 </section>
 
 <section ng-controller="NarrativeController">
-## What is Clojure good at?
+## ¿En qué es bueno Clojure?
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block21" ng-click="block21=!block21">Intro</button>
 
-> So, we said Clojure is all-purpose, and it is. That doesn't mean it
-> doesn't have strong suits, though.
+> Entonces, dijimos que Clojure es de propósito-general, y lo es. Eso no significa
+> que no tenga puntos fuertes.
 {: ng-show="block21" .description}
 
-#### Data processing <button class="link" ng-bind-html="details" ng-model="block22" ng-click="block22=!block22"></button>
+#### Procesamiento de datos <button class="link" ng-bind-html="details" ng-model="block22" ng-click="block22=!block22"></button>
 
-> Clojure is known for being good at data processing. That's because
-> it has a good set of data structures--that is, it has several
-> built-in ways to represent data that are easy to use and powerful.
+> Clojure es reconocido por hacer un buen procesamiento de datos. Esto es porque
+> tiene un buen set de estructura de datos--eso es, Es que tiene muchas
+>  maneras incorporadas de representar datos que lo hacen fácil y poderoso.
 {: ng-show="block22" .description}
 
-#### Concurrency <button class="link" ng-bind-html="details" ng-model="block23" ng-click="block23=!block23"></button>
+#### Concurrencia <button class="link" ng-bind-html="details" ng-model="block23" ng-click="block23=!block23"></button>
 
-> Clojure is known for its concurrency. Think about writing
-> instructions for four of your friends about how to assemble a
-> treehouse, but instead of writing them so one step is done at a
-> time, each of your friends does part of the job. Then, they
-> coordinate at the right time to assemble those parts into bigger
-> parts, and they do this over and over again until the end, when it
-> all comes together. Those instructions would be really complicated
-> and hard to write--and probably hard to read, too. Clojure gives us
-> some easy ways to write these sorts of instructions for computers.
+> Clojure es reconocido por su concurrencia. Pensá acerca de escribir 
+> instructiones para cuatro de tus amigos sobre como construir una 
+> casa del árbol, but instead of writing them so one step is done at a
+> time, cada uno de tus amigos hace parte del trabajo. entonces, ellos
+> coordinan la momento exacto como construir esas partes en partes más
+> grandes, y ellos haces esto uno y otra vez hasta el final, cuando todas
+> las partes se juntan. Estas instrucciones pueden ser realmente complicadas
+> y díficiles de escribir--y probablemente díficiles de escribir también.
+> Clojure nos da algunas fáciles maneras de escribir ese tipo de instrucciones para
+> para computadoras.
 {: ng-show="block23" .description}
 
-#### Everything! <button class="link" ng-bind-html="details" ng-model="block24" ng-click="block24=!block24"></button>
+#### Todo! <button class="link" ng-bind-html="details" ng-model="block24" ng-click="block24=!block24"></button>
 
-> Clojure also works well for building drawing applications with
-> [Quil](https://github.com/quil/quil), which is what we're going to
-> do together.
+> Clojure tambié sirve para construir aplicaciones de dibujo con
+> [Quil](https://github.com/quil/quil), con el cual vamos a hacer algo
+> juntos.
 {: ng-show="block24" .description}
 </section>
 
 <section ng-controller="NarrativeController">
-## What does Clojure look like?
+## ¿A qué se parece Clojure?
 {: .slide_title .slide}
 
 ```clojure
@@ -118,180 +119,183 @@ Introduction to Programming with Clojure
 (forward :trinity 40)
 ```
 
-#### Parentheses <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
+#### Paréntesis <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
 
-> Notice the parentheses. Parentheses enclose instructions to the
-> computer in Clojure. A left parenthesis
-> is the start of the instruction, and a matching right parenthesis is
-> the end of enclosing instruction. Normally, Clojure code has a lot
-> of nested parentheses, or in other words, nested enclosing instructions.
+> Notice the parentheses. Paréntesis encierran instrucciones para la 
+> computadora en Clojure. Un paréntesis izquierdo
+> es el comienzo de una instrucción, y su respectivo paréntesis derecho es
+> es el final de encerrar una instrucción. Normalmente, Clojure code tiene un montón
+> de paréntesis anidados , en otras palabras, los paréntesis anidados encierran 
+> instrucciones.
 {: ng-show="block31" .description}
 
-#### Functions <button class="link" ng-bind-html="details" ng-model="block32" ng-click="block32=!block32"></button>
+#### Funciones <button class="link" ng-bind-html="details" ng-model="block32" ng-click="block32=!block32"></button>
 
-> Next to the parentheses, we see the instructions to the
-> computer. That instruction is normally what we call a _function_.
-> The functions do all the hard work in Clojure.
-> `print-str`, `+` and `forward` are all functions.
-> When these functions get run, they return some type of value.
-> Clojure functions always return a value.
+> después de los paréntesis, nosotros veremos las instrucciones
+> de la computadora. Esa instrucción es lo que normalmente llamamos una _función_.
+> las funciones hacen todo el trabajo duro en Clojure.
+> `print-str`, `+` y `forward` son todas funciones.
+> Cuando estas funciones se ejecutan, ellas retornan algún tipo de valor.
+> En Clojure las funciones siempre retornan un valor.
 {: ng-show="block32" .description}
 
-#### Arguments <button class="link" ng-bind-html="details" ng-model="block33" ng-click="block33=!block33"></button>
+#### Argumentos <button class="link" ng-bind-html="details" ng-model="block33" ng-click="block33=!block33"></button>
 
 > Many functions take in _arguments_--which are everything else inside
 > the enclosing parentheses after the function--.
-> `print-str` takes "Hello, World!" and returns a string.
-> `+` takes 3 and 4, adds them, and returns 7.
-> `forward` takes :trinity and 40, moves a turtle by 40 and returns
-> the result.
+> `print-str` utiliza "Hello, World!" y retorna una cadena de caracteres.
+> `+` utiliza 3 y 4, los suma, y devuelve 7.
+> `forward` utiliza :trinity y 40, mueve la tortuga en 40 y retorna
+> el resultado.
 {: ng-show="block33" .description}
 </section>
 
 <section ng-controller="NarrativeController">
-### Comments
+### Comentarios
 
 <button class="link" ng-bind-html="details1" ng-model="block41" ng-click="block41=!block41"></button>
 <button class="link" ng-bind-html="details2" ng-model="block42" ng-click="block42=!block42"></button>
 
-> When we write code, we try to make it as clear as possible. Doing so
-> is a huge advantage because our code gets read by others (oftentimes
-> more so than by us!), or we come back to our own code to read it
-> later, by which point we may have forgotten each exact detail of the
-> code. One way that we can clarify our code is annotating it with
-> comments. Comments are notes that we add to code, for our own sake,
-> that the computer ignores.
+> When we write code, trataremos de que sea lo más claro posible. Haciendo eso
+> es un gran avance porque nuestro código puede ser leido por otros (a veces
+> por más que nosotros!), o podesmos volver a leer nuestro propio código
+> después, by which point we may have forgotten each exact detail of the
+> code. One way that we can clarify our code es haciendo acotaciones con
+> comentarios. Los Comentarios son notas que agregamos al código, para nuestro 
+> propio bien, la computadora los ignora.
 {: ng-show="block41" .description}
 
-> In Clojure, comments can be started with a semicolon. Everything
-> after a semicolon until the end of that line is a comment that gets
-> ignored by the computer. Only one semicolon is necessary, but
-> sometimes you see two semicolons in a row, depending on stylistic
-> tastes.
+> En Clojure, comentarios pueden ser comenzados con un punto y coma. Todo
+> después de un punto y coma until hasta el final de la línea es un comentario que
+> ignorado por la computadora. Solo un punto y coma es necesario, pero 
+> a veces puedes ver dos punto y coma en una fila, dependiendo del estilo
+> usado.
 {: ng-show="block42" .description}
 
-> Reference: [Comment](http://clojurebridge.github.io/community-docs/docs/clojure/comment/)
+> Referencia: [Comment](http://clojurebridge.github.io/community-docs/docs/clojure/comment/)
 {: ng-show="block42" .description}
 
 ```clojure
-;; example functions from a previous slide
-(print-str "Hello, World!")  ; a well-known hello world
-(+ 3 4)                      ; why not 3 + 4? figure out later
+;; ejemplo de funciones de un slide anterior
+(print-str "Hola, Mundo!")   ; el bien-conocido "hola mundo"
+(+ 3 4)                      ; ¿por qué no 3 + 4? lo veremos después
 ```
 </section>
 
 <section>
-## What is a REPL?
+## ¿Qué es un REPL?
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block51" ng-click="block51=!block51">Intro</button>
 
-> "REPL" stands for "Read-Eval-Print-Loop," which still doesn't make a
-> ton of sense without context. Many programming languages, including
-> Clojure, have a way to execute code interactively so you get instant
-> feedback. In other words, the code is read, then it is evaluated,
-> then the result is printed, and you begin again--thus, a loop.
+> "REPL" significa "Leer-Evaluar-Imprimir-Loop," lo cual no tieme mucho sentido
+> sin el contexto. Many programming languages, including
+> Clojure, hay una manera de escribir código interactivamente, con el cual puedes
+> tener una respuesta instantanea. En otras palabras, el código es leido, cuando es 
+> evaluado,
+> el resultado es impreso en pantalla, y comienza nuevamente, un loop.
 {: ng-show="block51" .description}
 
 **R**ead, **E**val, **P**rint, **L**oop
 
-![Nightcode's repl](img/repl.png)
+![El repl de Nightcode](img/repl.png)
 
 </section>
 
 <section ng-controller="NarrativeController">
-## REPL in action
+## REPL en acción
 {: .slide_title .slide}
 
 
 #### Nightcode InstaREPL <button class="link" ng-bind-html="details" ng-model="block61" ng-click="block61=!block61"></button>
 
-> To interact with Clojure, we can use InstaREPL feature of Nightcode.
-> It's a nice way to play with Clojure interactively.
+> Para interactuar con Clojure, podemos usar el InstaREPL de Nightcode.
+> esta es una buena manera de juagr Clojure interactivamente.
 {: ng-show="block61" .description}
 
 
-#### Using the REPL <button class="link" ng-bind-html="details" ng-model="block62" ng-click="block62=!block62"></button>
+#### Usando el REPL <button class="link" ng-bind-html="details" ng-model="block62" ng-click="block62=!block62"></button>
 
 > Nightcode has a project setting aware REPL on a bottom pane.
->  When "Run with REPL" button gets clicked, this REPL starts.
+>  When el botón "Run with REPL" es clickeado, el REPL empieza.
 {: ng-show="block62" .description}
 
-> Alternatively, we can start REPL using leiningen on a terminal (without Nightcode).
-> On a terminal, type `lein repl`, then, REPL starts.
-> If we hit `lein repl` command within the project directory (folder), it sees the project setting.
+> Alternativamente, podemos iniciar un  REPL usando  leiningen en un terminal (sin Nightcode).
+> En una terminal, escribe `lein repl`, entonces, el REPL inicará.
+> Si ejecutamos `lein repl` comando en el directorio del projecto (carpeta), veras la configuración.
 {: ng-show="block62" .description}
 
 
-#### Evaluate program and line <button class="link" ng-bind-html="details" ng-model="block63" ng-click="block63=!block63"></button>
+#### Evaluar un programa y línea <button class="link" ng-bind-html="details" ng-model="block63" ng-click="block63=!block63"></button>
 
 <!-- TODO project_name should probably be defined somewhere, right? -->
-> Nightcode also lets us evaluate an entire file (program) or line(s).
-> On Nightcode, after REPL has started, "Realod File" and "Reload Selection" works.
+> Nightcode nos deja evalur un archivo entero (programa) o una línea(s).
+> En Nightcode, después que el REPL ha iniciado "Realod File" y "Reload Selection"
+> funcionan.
 {: ng-show="block63" .description}
 </section>
 
 <section>
-#### EXERCISE 1: Try Nightcode InstaREPL
+#### EJERCICIO 1: Prueba el InstaREPL de Nightcode 
 
-1. Start Nightcode
-2. Import `myproject` <br/> (which you created while testing leiningen setup)
-3. Open `core.clj` <br/>(`myproject` -> `src` -> `myproject` -> `core.clj`
-4. Click __InstREPL__ button
-5. Type the Clojure functions below and see what happens
+1. inicia Nightcode
+2. Importa `myproject` <br/> (el cual creaste mientras testeabas el setup de leiningen)
+3. Abrí `core.clj` <br/>(`myproject` -> `src` -> `myproject` -> `core.clj`
+4. Hace click en el  __InstREPL__ botón
+5. Escribí las funciones Clojure funciones escritas abajo y ve que pasa
 
 ```clojure
-(print-str "Hello, World!")
-(print-str "Hello, World!" " " "from Clojure")
+(print-str "Hola, Mundo!")
+(print-str "Hola, Mundo!" " " "desde Clojure")
 (+ 3 4)
 (- 3 4)
 (* 3 4)
 ```
-> Make sure you type the lines <em>exactly</em> as you see them above,
-> taking care to put the parentheses in the right locations.
+> Hacegurate de tipiar la lineas  <em>exactamente</em> como las vez,
+> teniedo cuidado de poner los parentesis lugar correcto.
 </section>
 
 <section>
 #### EXERCISE 2: Evaluate file and line - Part 1
 
-* Open the file `welcometoclojurebridge/src/clojurebridge_turtle/walk.clj`
-* Evaluate the entire file by hitting "Run with REPL" followed by "Reload File"
-* See what happens
-* Type `(forward 40)` on the bottom line of `walk.clj` in the editor. Evaluate this line by selecting line and hitting "Reload Selection"
-* See what happens
+* Abrí el archivo `welcometoclojurebridge/src/clojurebridge_turtle/walk.clj`
+* Evaluá todo el archivo presionando "Run with REPL" seguido de "Reload File"
+* Mirá que pasa después
+* Tipiá `(forward 40)` al fondo del archivo `walk.clj` en el editor. Evaluar esta linea elijiendo la linea line y presionando "Reload Selection"
+* Mirá que pasa después
 
-(Continue on EXERCISE 3)
+(Continua en el EJERCICIO 3)
 </section>
 
 <section>
-#### EXERCISE 3: Evaluate file and line - Part 2
+#### EJERCICIO 3: Evaluar el archivo y línea - Parte 2
 
-(Suppose EXERCISE 2 is done)
+(Suponiendo que el EJECICIO 2 está terminado)
 
-* Type `(right 90)` and "enter" in the REPL pane (bottom) ![Run with REPL pane](img/run-with-repl.png)
-* See what happens to the turtle
-* Take a look [Turtles App API](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md) and
-[How To Walk Turtles](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md)
-[section 1 and 2], and try more commands to walk your turtle
+* Tipiá `(right 90)` y "enter" en el REPL (al fondo) ![Run with REPL pane](img/run-with-repl.png)
+* Mirá que pasa con la tortuga
+* Pegale una mirada a [Tortugas App API](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md) y
+[Como pasear Tortugas](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md)
+[sección 1 y 2], y prueba mas comandos para pasear tu tortuga
 </section>
 
 <section>
-#### EXERCISE 4: Look at Clojure docs
+#### EJERCICIO 4: Mirar los docs de Clojure
 
-* In the bottom REPL pane, try to look up the documentation for a function you have used
-* You can use the `(doc function-name)` command to do this
-* Try `(doc +)` and `(doc forward)` on the REPL
-* Try other functions we used so far, for example, `-`, `*`, or `doc`
+* En el fondo del REPL, intentá mirar la  documentación por las funciones usadas
+* Podes usar el  `(doc function-name)` comando para esto
+* Probá `(doc +)` y `(doc forward)` en el REPL
+* Probá algun otra función que hemos usado, por ejemplo, `-`, `*`, ó `doc`
 </section>
 
 {% comment %}
 
-:star2: A link below is for a slide only. Go to [README.md](../README.md)
+:star2: A link siguiente es para un slide solo. Andá al[README.md](../README.md)
 instead. :star2:
 
 {% endcomment %}
 
 <section>
-Return to the <a href="javascript:;" onClick="Reveal.slide(1);">first slide</a>,
-or go to the [curriculum outline](/curriculum/#/1).
+Volvé al <a href="javascript:;" onClick="Reveal.slide(1);">primer slide</a>,
+or andá al [curriculum outline](/curriculum/#/1).
 </section>
