@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Introduction
-permalink: /outline/intro.html
+title: Introducción
+permalink: /es/outline/intro.html
 ---
 
 {::options parse_block_html="true" /}
 
 {% comment %}
 
-http://clojurebridge.github.io/curriculum/outline/intro.html
+http://clojurebridge.github.io/curriculum/es/outline/intro.html
 
 {% endcomment %}
 
