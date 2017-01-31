@@ -22,7 +22,7 @@ Estructuras de Datos
 </section>
 
 <section>
-### Grupo de datos - Collecciones
+### Grupo de datos - Colecciones
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block11" ng-click="block11=!block11">Introducción</button>
@@ -33,8 +33,8 @@ queramos trabajar con grupos de datos.
 {: ng-show="block11" .description}
 
 > Clojure tiene excelentes herramientas para trabajar con estos grupos,
-o *colleciones*, de datos. No solo nos proveé con cuatro tipos distintos
-de colleciones, sino también de una manera uniforme de usarlas.
+o *colecciones*, de datos. No solo nos proveé con cuatro tipos distintos
+de colecciones, sino también de una manera uniforme de usarlas.
 {: ng-show="block11" .description}
 </section>
 
@@ -42,9 +42,9 @@ de colleciones, sino también de una manera uniforme de usarlas.
 ### Vectores
 {: .slide_title .slide}
 
-#### Colleción secuencial <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
+#### Colección secuencial <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
 
-> Un vector es una colleción secuencial de valores. Un vector puede
+> Un vector es una colección secuencial de valores. Un vector puede
 estar vacío. Un vector puede contener valores de tipos distintos.
 Cada valor en un vector está numerado empezando en 0, a ese número
 se lo llama su índice. El índice se usa para referenciar a cada valor
@@ -99,7 +99,7 @@ devuelve los nombres de las tortugas como un vector:
 #### Creación <button class="link" ng-bind-html="details" ng-model="block61" ng-click="block61=!block61"></button>
 
 > Las siguientes dos funciones se usan para crear vectores. La función
-`vector` toma cualquier cantidad de items y los pone en un
+`vector` toma cualquier cantidad de elementos y los pone en un
 nuevo vector. `conj` es una función interesante que verás siendo usada
 con todas las estructuras de datos. Con los vectores, toma un vector y un elemento,
 y devuelve un nuevo vector con ese elemento agregado al final del vector original.
@@ -119,7 +119,7 @@ unir o combinar. Eso es lo que hacemos: estamos uniendo el nuevo elemento al vec
 <section ng-controller="NarrativeController">
 #### Extracción <button class="link" ng-bind-html="details" ng-model="block81" ng-click="block81=!block81"></button>
 
-> Ahora, mira estas cuatro funciones. `count` nos dice cuantos items
+> Ahora, mira estas cuatro funciones. `count` nos dice cuantos elementos
 hay en un vector. `nth` nos da el enésimo elemento del vector. Notá que
 empezamos contando en 0, por lo que en el ejemplo, llamar `nth` con
 el número 1 nos devuelve lo que llamaríamos el segundo elemento
@@ -159,7 +159,7 @@ no pensar en eso y `nth` al mismo tiempo, porque puede ser confuso.
 {: .slide_title .slide}
 
 * Ve a `core.clj` en `myproject` y prendé el InstaREPL
-* Creá un vector de las temperáturas máximas de los próximos 7 días
+* Creá un vector de las temperaturas máximas de los próximos 7 días
 de la ciudad donde vivís
 * Luego usá la función `nth` para obtener la temperatura máxima del próximo
 Martes
@@ -205,7 +205,7 @@ contener cosas, pero que no tiene nada todavía.
 <section ng-controller="NarrativeController">
 #### Ejemplo <button class="link" ng-bind-html="details" ng-model="block103" ng-click="block103=!block103"></button>
 
-> Cuando una tortuga recive un comando como `forward` o `right`,
+> Cuando una tortuga recibe un comando como `forward` o `right`,
 devuelve el resultado como un mapa con un mapa adentro.
 {: ng-show="block103" .description}
 
@@ -315,7 +315,7 @@ como camino en un mapa anidado.
 <section>
 ### Colecciones de Colecciones
 
-#### <button class="link" ng-model="block101" ng-click="block101=!block101">Intro</button>
+#### <button class="link" ng-model="block101" ng-click="block101=!block101">Introducción</button>
 
 > Valores simples como números, claves y strings no son los únicos
 tipos de cosas que podes poner en las colecciones, así que podes tener un vector
@@ -369,9 +369,9 @@ st
 
 * Abrí el archivo `walk.clj`
 * Probá los ejemplos de las dos previas diapositivas en el REPL
-* Notá que valores obtenes
+* Notá que valores obtenés
 
-> No te olvides de apretar __enter__ cuando escribis ceodigo en el REPL
+> No te olvides de apretar __enter__ cuando escribís código en el REPL
 
 
 ```clojure
