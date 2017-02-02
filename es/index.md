@@ -31,7 +31,7 @@ Please look at [README.md](README.md) instead. :green_heart: :blue_heart:
 * [Introducción a la Programación con Clojure](outline/intro.html)
 * [Valores simples](outline/simple_values.html)
 * [Estructuras de Datos](outline/data_structures.html)
-* [Functiones](outline/functions.html)
+* [Funciones](outline/functions.html)
 * [App Capstone: Dibujando líneas](https://github.com/ClojureBridge/drawing/blob/master/curriculum/first-program.md)
 * [Control de Flujo y Lógica](outline/flow_control.html)
 * [[bonus] Secuencias](outline/sequences.html)
