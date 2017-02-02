@@ -63,7 +63,7 @@ encontrarlo, ya que tiene un número.
 pero es común contar desde 0 cuando programamos.
 {: ng-show="block22" .description}
 
-![Vector](/outline/img/vector.png)
+![Vector](/curriculum/outline/img/vector.png)
 
 </section>
 
@@ -146,8 +146,8 @@ no pensar en eso y `nth` al mismo tiempo, porque puede ser confuso.
 
 1. Agregá una tortuga con una pieza de código en el archivo
   * Abrí el archivo `walk.clj`
-  * Agregá una linea: `(add-turtle :neo)` en la última linea del archivo
-  * Seleccioná esta linea y clickeá "Reload Selection"
+  * Agregá una línea: `(add-turtle :neo)` en la última línea del archivo
+  * Seleccioná esta línea y clickeá "Reload Selection"
 2. (Opcional) agregá una tortuga usando el REPL
   * Tipeá `(add-turtle :oracle)` seguido de enter en el panel del REPL de abajo
 3. Ver los nombres de las tortugas
@@ -178,13 +178,14 @@ otro lenguaje, habrás visto algo como los mapas--quizás llamados
 diccionarios, hashes, o arrays asociativos.
 {: ng-show="block101" .description}
 
-![Mapa](/outline/img/map.png)
+![Mapa](/curriculum/outline/img/map.png)
 </section>
 
 <section ng-controller="NarrativeController">
 #### Sintaxis <button class="link" ng-bind-html="details" ng-model="block102" ng-click="block102=!block102"></button>
 
-> Escribimos los mapas encerrando claves y valores alternados entre llaves, así.
+> Escribimos los mapas encerrando claves y valores alternados entre llaves,
+como se puede ver abajo.
 {: ng-show="block102" .description}
 
 > Los mapas son útiles porque contienen datos de la forma que normalmente
