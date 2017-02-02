@@ -1,7 +1,7 @@
-Ubuntu Setup
+Configuración en Ubuntu
 ==========
 
-* Start a terminal
+* Iniciar una terminal
 * Install Git
 * Configure Git
 * Install Java
@@ -9,17 +9,17 @@ Ubuntu Setup
 * Install Nightcode
 * Test your setup
 
-## Starting a terminal
+## Iniciando una terminal
 
-For these instructions, and for much of the class, you will need to have a terminal, or command line, open. This is a text-based interface to talk to your computer, and you can open it by clicking "Dash Home" and typing `Terminal`. You can also open a terminal at any time by pressing `CTRL-ALT-T`. If you have never used the terminal before, you may want to spend some time [reading up on command-line basics](http://blog.teamtreehouse.com/command-line-basics).
+Para estas instrucciones, y para la mayor parte de la clase, vas a necesitar una terminal o línea de comandos. Esta es una interfaz basada en texto para "hablarle" a tu computadora. La podés abrir haciendo click en "Dash Home" y tipeando `Terminal`. También podés abrir una terminal en cuaquier momento apretando `Ctrl-Alt-T`. Si nunca usaste una terminal antes, puede que convenga invertir algo de tiempo leyendo [lo básico acerca de la línea de comandos](http://blog.teamtreehouse.com/command-line-basics).
 
-Go ahead and open your terminal now. It should look something like this:
+Ahora, andá y abrí tu primera terminal. Debería ser algo así como:
 
-![blank terminal](img/ubuntu/blank_terminal.png)
+![terminal en blanco](/outline/img/ubuntu/blank_terminal.png)
 
-The prompt (where you will type your commands) may look different: it usually shows the computer name and user name, as well as the folder or directory you are currently in.
+El símbolo de sistema (donde vas a tipear tus comandos) puede verse distinto en tu computadora: suele mostrar el nombre de la computadora y el nombre de usuario, junto con el directorio o carpeta en la cual estás.
 
-For the rest of this setup, I will tell you to run commands in your terminal. When I say that, I mean "type the command into the terminal and press the Return key."
+Para completar la configuración, te voy a ir pidiendo que ejecutes comandos en tu terminal. Lo que quiere decir: "tipeá el comando `<X>` en la terminal y apretá la tecla `Enter`".
 
 ## Installing Git
 
