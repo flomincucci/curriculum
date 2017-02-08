@@ -2,8 +2,8 @@ Configuración en Ubuntu
 ==========
 
 * Iniciar una terminal
-* Install Git
-* Configure Git
+* Instalar Git
+* Configurar Git
 * Install Java
 * Install Leiningen
 * Install Nightcode
@@ -21,36 +21,36 @@ El símbolo de sistema (donde vas a tipear tus comandos) puede verse distinto en
 
 Para completar la configuración, te voy a ir pidiendo que ejecutes comandos en tu terminal. Lo que quiere decir: "tipeá el comando `<X>` en la terminal y apretá la tecla `Enter`".
 
-## Installing Git
+## Instalando Git
 
-See if you already have Git installed with `git version`.
-If the `git` command is not found, install it with this command in the terminal:
+Mirá si ya tenés Git instalado con `git version`.
+Si el comando `git` no es encontrado, instalalo con este comando en la terminal:
 
 ```bash
 sudo apt-get install git
 ```
 
-## Configure Git
+## Configurando Git
 
-If you've used Git before then you should already have user.name and user.email configured.
-Otherwise, type this in the terminal:
+Si ya has usado Git antes, ya deberías tener configurados los valores `user.name` y `user.email`.
+Si no, tipeá en la terminal:
 
 ```bash
-git config --global user.name "Your Actual Name"
-git config --global user.email "Your Actual Email"
+git config --global user.name "Tu nombre"
+git config --global user.email "Tu email"
 ```
 
-TIP: Use the same email address for git, github, and ssh.
+CONSEJO: Usá la misma dirección de mail para `git`, GitHub y `ssh`.
 
-Verify by typing this in the terminal:
+Verificá que todo está bien tipieando lo siguiente en la terminal:
 
 `git config --get user.name`
-Expected result:
-`your name`
+Deberías obtener:
+`Tu nombre`
 
 `git config --get user.email`
-Expected result:
-`your email address`
+Deberías obtener:
+`Tu email`
 
 
 ## Install Java
