@@ -4,7 +4,7 @@ Configuración en Ubuntu
 * Iniciar una terminal
 * Instalar Git
 * Configurar Git
-* Install Java
+* Instalar Java
 * Install Leiningen
 * Install Nightcode
 * Test your setup
@@ -53,39 +53,38 @@ Deberías obtener:
 `Tu email`
 
 
-## Install Java
+## Instalar Java
 
-Ubuntu comes with OpenJDK installed.
-However, newer versions of Nightcode have a problem to run on OpenJDK.
-Oracle JDK 8 is the best Java to go over our materials.
+Ubuntu viene con OpenJDK instalado.
+Sin embargo, las versiones más nuevas de Nightcode tienen un problema para correr sobre OpenJDK.
+Oracle JDK 8 es el mejor Java para usar nuestro material.
 
 ```bash
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
-(follow the instruction)
+(seguí las instrucciones)
 ```
 
-At this moment, you have installed Oracle JDK 8 on your Ubuntu box.
-There's one more step to use newly installed Oracle JDK 8.
+A esta altura, ya tenés instalado Oracle JDK 8 en tu sistema Ubuntu.
+Hay un paso más para usar el Oracle JDK 8 que acabás de instalar.
 
 ```bash
 sudo update-alternatives --config java
-(choose /usr/lib/jvm/java-8-oracle/jre/bin/java)
+(elegí /usr/lib/jvm/java-8-oracle/jre/bin/java)
 ```
 
-Run `java -version` in your terminal. You should see something like this in your terminal:
+Ejecutá en tu terminal `java -version`. Deberías ver algo así como:
 
-![Java version](img/ubuntu/ubuntu-java-version.png)
+![versión de Java](/outline/img/ubuntu/ubuntu-java-version.png)
 
-The minor version may differ from what you see above; however, it must be `1.8.0`.
-Also, you should see `Java(TM) SE Runtime Environment`.
+La versión menor puede diferir de la de arriba; sin embargo, tiene que ser `1.8.0`.
+Además, deberías ver `Java(TM) SE Runtime Environment`.
 
 
-
-Alternatively, you may download Java Development Kit (JDK) from
-[Java SE Downloads](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
-In this case, you need to set `JAVA_HOME` and `PATH` environment variables after extracting the archive.
+Otra opción es bajar el Java Development Kit (JDK) de Oracle desde
+ [las descargas de Java SE](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+En este caso, necesitás definir las variables de entorno `JAVA_HOME` y `PATH` luego de extraer el archivo.
 
 
 ## Install Leiningen
