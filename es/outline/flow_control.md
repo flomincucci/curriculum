@@ -1,47 +1,48 @@
 ---
 layout: default
-title: Flow Control
-permalink: /outline/flow_control.html
+title: Control de Flujo
+permalink: /es/outline/flow_control.html
 ---
 
 {::options parse_block_html="true" /}
 
 {% comment %}
 
-http://clojurebridge.github.io/curriculum/outline/flow_control.html
+http://clojurebridge.github.io/curriculum/es/outline/flow_control.html
 
 {% endcomment %}
 
 <section>
-Flow Control
+Control de Flujo
 -------------------------
 {: .slide-title .chapter}
 
 * `if`
 * `cond`
-* Boolean logic
+* Lógica booleana
 </section>
 
 <section ng-controller="NarrativeController">
-### What is flow control?
+### Qué es el Control de Flujo?
 {: .slide_title .slide}
 
-#### Decisions how to react <button class="link" ng-bind-html="details" ng-model="block11" ng-click="block11=!block11"></button>
+#### Decidir y reaccionar <button class="link" ng-bind-html="details" ng-model="block11" ng-click="block11=!block11"></button>
 
-> "Flow control" is the programming term for deciding how to react to
-> a given circumstance. We make decisions like this all the time. *If*
-> it's a nice day out, *then* we should visit the park; *otherwise* we
-> should stay inside and play board games. *If* your car's tank is
-> empty, *then* you should visit a gas station; *otherwise* you should
-> continue to your destination.
+> "Control de Flujo" es el término usado en programación para decidir cómo
+> reaccionar ante una dada circunstancia. Tomamos decisiones de esta manera
+> todo el tiempo. *Si* (if) es un lindo día, *entonces* (then) deberíamos
+> ir la parque. *Si no* (else) deberíamos quedarnos y jugar juegos de mesa.
+> *Si* el tanque está vacío, *entonces* deberías ir a cargar nafta, *si no*
+> deberías continuar hasta tu lugar de destino.
 {: ng-show="block11" .description}
 
-#### Testing conditions to react <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
+#### Testeando condiciones para reaccionar <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
 
-> Software is also full of these decisions. *If* the user's input is
-> valid, *then* we should save her data; *otherwise* we show an error
-> message. The common pattern here is that you test some condition and
-> react differently based on whether the condition is *true* or *false*.
+> El software está lleno de este tipo de decisiones. *Si* el input del
+> usuario es válido, *entonces* guardamos sus datos; *si no* le
+> mostramos un mensaje de error. El patrón común es que verificás una
+> condición y reaccionás de forma diferente basado en si la condición
+> da *verdadero* (true) o *falso* (false).
 {: ng-show="block12" .description}
 </section>
 
@@ -49,20 +50,20 @@ Flow Control
 ### `if`
 {: .slide_title .slide}
 
-<button class="link" ng-bind-html="details1" ng-model="block21"
-ng-click="block21=!block21"></button>
+<button class="link" ng-bind-html="details1" ng-model="block21" ng-click="block21=!block21"></button>
 <button class="link" ng-bind-html="details2" ng-model="block22" ng-click="block22=!block22"></button>
 
-> In Clojure, the most basic tool we have for the flow control is the `if`
-> operator. Here's the example how you might code the data validation scenario.
+> En Clojure, la herramienta más básica que tenemos para Control de Flujo es
+> el operador *if*. Acá hay un ejemplo de cómo podrías programar un escenario
+> de validación de ciertos datos de entrada:
 {: ng-show="block21" .description}
 
-> Here' an example. If adding 40 to `y` is still less than 150, then
-> return `(+ y 40)`; otherwise, returns -150. (As for turtle app's
-> frame, the top has 150 in y, while the bottom has -150 in y.)
+> Ejemplo: Si luego de sumar 40 a `y` da menos de 150, entonces se debe retornar
+> `(+ y 40)`; si no, retornar -150. (esto es para la app de la tortuga,
+> el borde superior del marco está en 150 en y, y el inferior en -150 en y.)
 {: ng-show="block22" .description}
 
-> Reference: [Conditional `if`](http://clojurebridge.github.io/community-docs/docs/clojure/if/)
+> Referencia: [Condicional `if`](http://clojurebridge.github.io/community-docs/docs/clojure/if/)
 {: ng-show="block22" .description}
 
 ```clojure
@@ -73,7 +74,7 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section ng-controller="NarrativeController">
-#### General form of `if` operator
+#### Forma general del operador `if`
 
 ```clojure
 (if conditional-expression
@@ -83,70 +84,70 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section ng-controller="NarrativeController">
-#### `if` examples
+#### Ejemplos de `if`
 
 ```clojure
 (if (> 3 1)
-  "3 is greater than 1"
-  "3 is not greater than 1")
-;=> "3 is greater than 1"
+  "3 es mayor que 1"
+  "3 no es mayor que 1")
+;=> "3 es mayor que 1"
 
 (if (> 1 3)
-  "1 is greater than 3"
-  "1 is not greater than 3")
-  ;=> "1 is not greater than 3"
+  "1 es mayor que 3"
+  "1 no es mayor que 3")
+  ;=> "1 no es mayor que 3"
 ```
 </section>
 
 <section ng-controller="NarrativeController">
-#### Truthiness <button class="link" ng-bind-html="details" ng-model="block51" ng-click="block51=!block51"></button>
+#### Valor de verdad (Truthiness?) <button class="link" ng-bind-html="details" ng-model="block51" ng-click="block51=!block51"></button>
 
-> When testing the truth of an expression, Clojure considers the
-> values `nil` and `false` to be false and everything else to be true.
-> Here are some examples:
+> Al testear el valor de verdad de una expresión, Clojure considera los
+> valores `nil` y `false` como falso y cualquier otro valor como verdadero.
+> Acá hay algunos ejemplos:
 {: ng-show="block51" .description}
 
-> Reference: [Truthiness](http://clojurebridge.github.io/community-docs/docs/clojure/truthiness/)
+> Referencia: [Truthiness/Valor de verdad](http://clojurebridge.github.io/community-docs/docs/clojure/truthiness/)
 {: ng-show="block51" .description}
 
 
 ```clojure
-(if "anything other than nil or false is considered true"
-  "A string is considered true"
-  "A string is not considered true")
-;=> "A string is considered true"
+(if "cualquier valor aparte de nil y false es considerado verdadero"
+  "Un string es considerado verdadero"
+  "Un string no es considerado verdadero")
+;=> "Un string es considerado verdadero"
 
 (if nil
-  "nil is considered true"
-  "nil is not considered true")
-;=> "nil is not considered true"
+  "nil es considerado verdadero"
+  "nil no es considerado verdadero")
+;=> "nil no es considerado verdadero"
 
 (if (get {:a 1} :b)
-  "expressions which evaluate to nil are considered true"
-  "expressions which evaluate to nil are not considered true")
-;=> "expressions which evaluate to nil are not considered true"
+  "las expresiones que evalúan a nil son consideradas verdaderas"
+  "las expresiones que evalúan a nil no son consideradas verdaderas")
+;=> "las expresiones que evalúan a nil no son consideradas verdaderas"
 ```
 </section>
 
 <section>
-#### EXERCISE 1: Y value within a frame
+#### Ejercicio 1: Valor de y dentro de un marco
 {: .slide_title .slide}
 
-* Write a function `y-within-frame` that takes y (vertical position) as an argument.
-* You may use if example in the slide.
-* The function should return the y value that won't exceed 150.
+* Escribir una función `y-within-frame` que recibe y (posición vertical) como argumento.
+* Podés usar alguno de los ejemplos de if del slide.
+* La función debe devolver un valor de y que no sea mayor a 150.
 
-    - See: [x and y in absolute values](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md#x-and-y-in-absolute-values)
+    - Ver: [x, y en valores absolutos](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md#x-and-y-in-absolute-values)
 
 ```clojure
-;; if example
+;; ejemplo de if
 (if (< (+ y 40) 150)
   (+ y 40)
   -150))
 ```
 
 ```clojure
-;; usage of y-within-frame function
+;; uso de la función y-within-frame
 (y-within-frame 80)    ;=> 120
 (y-within-frame 180)   ;=> -150
 ```
@@ -159,21 +160,22 @@ ng-click="block21=!block21"></button>
 <button class="link" ng-bind-html="details1" ng-model="block61" ng-click="block61=!block61"></button>
 <button class="link" ng-bind-html="details2" ng-model="block62" ng-click="block62=!block62"></button>
 
-> The `if` operator takes only one predicate.
-> When we want to use multiple predicates, `if` is not a good option.
-> We have to write nested, nested, ... and nested `if` conditions.
-> To branch to multiple situations, `cond` operator works well.
+> El operador `if` toma un sólo predicado.
+> Cuando queremos usar múltiples predicados, `if` no es una buena opción.
+> Tenemos que anidar, anidar... y anidar condiciones `if`.
+> Para contemplar múltiples situaciones, el operador `cond` funciona bien.
 {: ng-show="block61" .description}
 
-> Here's the example. If adding 40 to y exceeds 150, evaluate the
-> first form. In this case, it returns -150. If adding 40 to y is less
-> than -150, evaluate the second form. In this case, it returns 150.
-> If both two predicates return false, evaluate the `:else` form. In
-> this case, it returns y plus 40. If we use this function in the
-> turtle app, we can keep our turtle between top and bottom of the frame.
+> Acá va el ejemplo. Si sumando 40 a `y` da más que 150, evaluar la primer
+> forma. En este caso, devuelve -150. Si sumando 40 a `y` da menos que -150,
+> evaluar la segunda forma. En este caso, devuelve 150. Si los dos
+> predicados retornan falso, evaluar la forma `:else`. In este caso,
+> retorna `y` más 40. Si usamos esta función en la app de la tortuga,
+> podemos mantener a nuestra tortuga entre el borde superior e inferior
+> del marco.
 {: ng-show="block62" .description}
 
-> Reference: [Conditional `cond`](http://clojurebridge.github.io/community-docs/docs/clojure/cond/)
+> Referencia: [Condicional `cond`](http://clojurebridge.github.io/community-docs/docs/clojure/cond/)
 {: ng-show="block62" .description}
 
 ```clojure
@@ -185,7 +187,7 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section ng-controller="NarrativeController">
-#### General form of `cond` operator
+#### Forma general del operador `cond`
 
 ```clojure
 (cond
@@ -197,23 +199,23 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section>
-#### EXERCISE 2: Y value within a frame - part 2
+#### Ejercicio 2: Valor de y dentro del marco - parte 2
 {: .slide_title .slide}
 
-> The function we wrote in the previous exercise, `y-within-frame`, has
-> a flaw. If the given y value is -1000, the function will return -960.
-> Since y value of the frame bottom is -150, -960 is beyond that.
-> Your turtle will go invisible area. Let's make it real within-frame
-> function using `cond`.
+> La función que escribimos en el ejercicio anterior, `y-within-frame`,
+> tiene un problema. Si el valor de y es -1000, la función retorna -960.
+> Dado que el valor de y del borde inferior del marco es -150, -960 queda
+> afuera del marco. Tu tortuga va a quedar en un área invisible. Hagamos
+> que la función sea realmente within-frame usando `cond`.
 
-* Write a function `y-within-frame-cond` that takes y (vertical position) as an argument.
-* You may use `cond` example in the slide.
-* The function should return the y value between -150 and 150.
+* Escribir una función `y-within-frame-cond` que recibe y (posición vertical) como argumento.
+* Podés usar el ejemplo de `cond` del slide.
+* La función debe retornar un valor de y entre -150 y 150.
 
-    - See: [x and y in absolute values](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md#x-and-y-in-absolute-values)
+    - Ver: [x e y en valores absolutos](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md#x-and-y-in-absolute-values)
 
 ```clojure
-;; usage of y-within-frame-cond function
+;; uso de la función y-within-frame-cond
 (y-within-frame-cond 200)    ;=> -150
 (y-within-frame-cond -200)   ;=> 150
 (y-within-frame-cond 0)      ;=> 40
@@ -221,31 +223,30 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section ng-controller="NarrativeController">
-### Boolean logic with `and`, `or`, and `not`
+### Lógica booleana con `and`, `or`, y `not`
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block81" ng-click="block81=!block81">Intro</button>
 
-> `if` statements are not limited to testing only one thing. You can
-> test multiple conditions using boolean logic. _Boolean logic_ refers
-> to combining and changing the results of predicates using `and`,
-> `or`, and `not`.
+> Las sentencias `if` no están limitadas a verificar sólo una cosa. Podés
+> verificar múltiples condiciones usando lógica booleana. La _Lógica booleana_ se refiere
+> a combinar y cambiar el resultado de predicados usando `and`, `or`, y `not`.
 {: ng-show="block81" .description}
 
-> If you've never seen this concept in programming before, remember
-> that it follows the common sense way you look at things normally. Is
-> this _and_ that true? Only if both are true. Is this _or_ that true?
-> Yes, if either -- or both! -- are. Is this _not_ true? Yes, if it's
-> false.
+> Si nunca antes viste este concepto en programación, recordá que sigue
+> el sentido común de cómo ves las cosas normalmente. Es esto y aquello verdadero?
+> Sólo si ambos son verdaderos. Es esto o aquello verdadero? Sí, si cualquiera
+> de ellos -- o ambos! -- lo son. Es esto _no_ verdadero? Sí, si es falso.
 {: ng-show="block81" .description}
 </section>
 
 <section ng-controller="NarrativeController">
-### Truthy and falsey table <button class="link" ng-bind-html="details" ng-model="block91" ng-click="block91=!block91"></button>
+### Tabla de verdad <button class="link" ng-bind-html="details" ng-model="block91" ng-click="block91=!block91"></button>
 
-> `and`, `or`, and `not` work like other functions (they aren't
-> exactly functions, but work like them), so they are in _prefix
-> notation_, like we've seen with arithmetic.
+> `and`, `or`, y `not` funcionan como otras funciones (no son
+> exactamente funciones, pero funcionan como si lo fueran), entonces
+> se usan con _notación prefija_, tal como vimos con los operadores
+> aritméticos.
 {: ng-show="block91" .description}
 
 | x     | y     | (`and` x y) | (`or` x y) | (`not` x) | (`not` y) |
@@ -258,15 +259,16 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section ng-controller="NarrativeController">
-#### `and`, `or`, and `not` combination <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
+#### Combinaciones de `and`, `or`, y `not` <button class="link" ng-bind-html="details" ng-model="block101" ng-click="block101=!block101"></button>
 
-> `and`, `or`, and `not` can be combined. This can be hard to read.
-> Here's an example:
+> `and`, `or`, y `not` pueden ser combinados. Esto a veces puede ser
+> difícil de leer. Veamos un ejemplo:
 {: ng-show="block101" .description}
 
 ```clojure
-(defn leap-year?
-  "Every four years, except years divisible by 100, but yes for years divisible by 400."
+(defn año-bisiesto?
+  "Cada cuatro años, excepto en años divisibles por 100,
+  pero sí para años divisibles por 400."
   [year]
   (and (zero? (mod year 4))
        (or (zero? (mod year 400))
@@ -275,16 +277,16 @@ ng-click="block21=!block21"></button>
 </section>
 
 <section ng-controller="NarrativeController">
-#### [Bonus] `cond`, `and`, `or`, and `not` combination <button class="link" ng-bind-html="details" ng-model="block110" ng-click="block110=!block110"></button>
+#### [Bonus] Combinando `cond`, `and`, `or`, y `not` <button class="link" ng-bind-html="details" ng-model="block110" ng-click="block110=!block110"></button>
 
-> We have learned `cond`, `and`, `or`, and `not`. Let's think what function we can write
-> combining those.
-> Here's an example:
+> Aprendimos sobre `cond`, `and`, `or`, y `not`. Pensemos qué función podemos
+> escribir combinando todos.
+> Un ejemplo:
 {: ng-show="block110" .description}
 
 ```clojure
 (defn true-or-false?
-  "Given op, returns true or false"
+  "Dado op, retorna true o false"
   [op]
   (let [x true
         y false]
@@ -293,30 +295,30 @@ ng-click="block21=!block21"></button>
       :else false)))
 
 (defn correct?
-  "Given op and ans, returns message whether ans was corret or not"
+  "Dados op y ans, retorna un mensaje indicando si ans fue correcta o no"
   [op ans]
   (if (= ans (true-or-false? op))
-      "You won"
-      "You lost"))
+      "Ganaste"
+      "Perdiste"))
 ```
 </section>
 
 <section>
-#### EXERCISE 3: [Bonus] Complete `true-or-false?` function
+#### Ejercicio 3: [Bonus] Completar la función `true-or-false?`
 {: .slide_title .slide}
 
-> `true-or-false?` function in previous slide sees only `:and`
-> operation. Add `:or`, `:not` operation in the function.
+> La función `true-or-false?` en el slide anterior sólo "ve" la
+> operación `:and`. Agregá las operaciones `:or` y `:not`.
 
-* Use `core.clj` of `myproject` and InstaREPL
-* Add `(= op :or)` and `(= op :not)` in `cond`
-* For `:not`, choose either x or y for the argument
+* Usá `core.clj` de `myproject` e InstaREPL
+* Agregá `(= op :or)` y `(= op :not)` en el `cond`
+* Para `:not`, elegí x o y como argumento
 
 ```clojure
-;; usage of correct? function
-(corret? :and false)   ;=> "You won"
-(corret? :or false)    ;=> "You lost"
-(corret? :not true)    ;=> "You won"  (this may be "You lost")
+;; uso de la función correct?
+(correct? :and false)   ;=> "Ganaste"
+(correct? :or false)    ;=> "Perdiste"
+(correct? :not true)    ;=> "Ganaste"  (aunque podría ser "Perdiste")
 ```
 </section>
 
@@ -328,6 +330,6 @@ instead. :star2:
 {% endcomment %}
 
 <section>
-Return to the <a href="javascript:;" onClick="Reveal.slide(1);">first slide</a>,
-or go to the [curriculum outline](/curriculum/#/1).
+Volvé al <a href="javascript:;" onClick="Reveal.slide(1);">primer slide</a>,
+o andá al [outline del curriculum](/curriculum/es/#/1).
 </section>
