@@ -7,7 +7,7 @@ Configuración en Ubuntu
 * Instalar Java
 * Instalar Leiningen
 * Instalar Nightcode
-* Test your setup
+* Testear tu configuración
 
 ## Iniciando una terminal
 
@@ -131,140 +131,135 @@ java -jar Nightcode-2.1.0.jar
 ![Nightcode](/outline/img/nightcode-startup.png)
 
 
-## Testing your setup
+## Testeando tu configuración
 
-You have set up Java, Leiningen, Nightcode, and Git on your computer--all the tools you will need for this course. Before starting, we need to test them out.
+Ya configuraste en tu computadora Java, Leiningen, Nightcode y Git --todas las herramientas que vas a necesitar para este curso. Antes de continuar, hay que testearlas.
 
-#### Testing Leiningen
+#### Testeando Leiningen
 
-Open a new terminal and run the following command:
+Abrí una terminal y ejecutá el siguiente comando:
 
 ```bash
-lein new myproject
+lein new miproyecto
 ```
 
-This will create a new project, `myproject`, which has files to form a Clojure project.
-Normally, Clojure code exists within such Clojure project.
+Esto va a crear un nuevo proyect, `miproyecto`, que tiene archivos para armar un proyecto Clojure. Normalmente, hay código Clojure dentro de tal tipo de proyecto.
 
-Run following commands:
+Ejecutá los siguientes comandos:
+
 
 ```bash
-cd myproject
+cd miproyecto
 lein repl
 ```
 
-This may take long to start up for the first time.
-Leiningen downloads libraries it needs to run Clojure.
-When Leiningen starts, you'll see `user=>` prompt on your terminal.
+Puede que esto tome un rato para arrancar la primera vez. Leiningen baja bibliotecas que necesita para correr Clojure. Cuando Leiningen arranque, vas a ver el símbolo `user=>` en tu terminal.
 
-![Testing lein repl](img/ubuntu/testing-lein-repl.png)
+![Testeando lein repl](/outline/img/ubuntu/testing-lein-repl.png)
 
-Now, you are ready to use __REPL__, which we learn about soon.
-It's a special terminal for Clojure.
+Ahora, estás lista/o para usar el __REPL__, que vamos a aprender en un ratito.
+Es una terminal especial para Clojure.
 
-At the REPL prompt, type `(+ 1 1)` and press Return. Did you get the answer `2` back? Great!
+En el símbolo del REPL, tipeá `(+ 1 1)` y apretá 'Enter'. ¿Obtuviste como respuesta `2`? ¡Genial!
 
-Your leiningen install looks good. For now, press the Control button and D button on your keyboard together (abbreviated as Ctrl+D). This should take you out of the Clojure REPL and back to your normal terminal prompt. Then, the terminal will show you the following message: `user=> Bye for now!`
+Tu instalación de Leiningen parece bien. Por ahora, apretá las teclas ``Control` y `D` al mismo tiempo (abreviadas `Ctrl-D`). Esto te debería sacar del REPL de Clojure y de vuelta a tu símbolo de terminal normal. Luego, la terminal te va a mostrar: `user=> Bye for now!` ("¡Chau (por ahora)!")
 
 
-#### Cloning out github repository
+#### Clonando el repositorio GitHub
 
-Open another terminal and run the following command:
+Abrí otra terminal y ejecutá el siguiente comando:
 
 ```bash
 git clone https://github.com/ClojureBridge/welcometoclojurebridge
 ```
 
-This will clone `welcometoclojurebridge` repository which includes sample Clojure apps.
-Your terminal should look similar to this picture:
+Esto va a clonar el repositorio `welcometoclojurebridge` que incluye aplicaciones Clojure de muestra.
+Tu terminal debería verse parecido a esta imagen:
 
-![Testing git clone](img/ubuntu/testing-git-clone.png)
+![Testeando git clone](/outline/img/ubuntu/testing-git-clone.png)
 
-Once it finishes, type following commands on the same terminal.
+Una vez que termine, tipeá los siguientes comandos en la misma terminal.
 
 ```bash
 cd welcometoclojurebridge
 ls
 ```
 
-You'll see the list of directories/files like this:
+Vas a ver la lista de directorios/archivos, de esta manera:
 
 ```
 README.md       outline         project.clj     resources       src
 ```
 
-#### Testing Nightcode
+#### Testeando Nightcode
 
-If Nightcode isn't started yet or closed, open it by typing the command on terminal:
+Si todavía no arrancaste Nightcode (o ya lo cerraste), abrilo tipeando el siguiente comando en la terminal:
 
 ```bash
 java -jar Nightcode-2.1.0.jar
 ```
 
-At the bottom right of the screen, type `(+ 1 1)` into the window. It should look like the following image:
+El la ventana de la parte inferior de la pantalla, tipeá `(+ 1 1)`. Debería verse como en la siguiente imagen:
 
-![Testing Nightcode](img/nightcode-repl.png)
+![Testeando Nightcode](/outline/img/nightcode-repl.png)
 
-If you see the result, 2, that worked, great!
-
-
-### Testing apps
-
-Now we will open and run the sample Clojure apps in Nightcode.
-On the top left corner, click "Import" then find the directory,
-`welcometoclojurebridge`, which was created when you ran
-`git clone` command. Click "Open."
-In the project directory tree on the left, click on `src` - `welcometoclojurebridge` - `core.clj`. The `core.clj` file will be opened on the right side.
-This is a Clojure program.
-
-![Testing apps - click import](img/nightcode-click-import.png)
-![Testing apps - open welcometoclojurebridge](img/nightcode-open-project.png)
-![Testing apps - core.clj](img/nightcode-welcometoclojurebridge-core.png)
+Si muestra como resultado `2`, ¡genial!
 
 
-The next step is to run the code shown in the window.
-Click "Run with REPL" on the bottom.
-It may take a while.
-Eventually, REPL will start and show a prompt, `user=>`.
-Once, you see the prompt, click "Reload" button.
+### Testeando aplicaciones
+
+Ahora, vamos a abrir y ejecutar las aplicaciones Clojure de muestra en Nigthcode.
+En la esquina superior izquierda, pinchá en `[Import]` ("Importar"). Luego, encontrá el directorio `welcometoclojurebridge` creado cuando ejecutaste el comando `git clone`. Pinchá `[Open]` ("Abrir").
+En el árbol de directorios del proyecto de la izquierda, pinchá en `src` - `welcometoclojurebridge` - `core.clj`. El archivo `core.clj` se va a abrir en el lado derecho.
+Esto es un programa en Clojure.
+
+![Testeando aplicaciones - pinchar en "Import" ("Importar")](/outline/img/nightcode-click-import.png)
+![Testeando aplicaciones - abrir welcometoclojurebridge](/outline/img/nightcode-open-project.png)
+![Testeando aplicaciones - core.clj](/outline/img/nightcode-welcometoclojurebridge-core.png)
 
 
-![Testing apps - start repl](img/nightcode-welcometoclojurebridge-run-with-repl.png)
-![Testing apps - repl started](img/nightcode-repl-started.png)
-![Testing apps - repl reload](img/nightcode-repl-reload.png)
+El siguiente paso es ejecutar el código que se muestra en la ventana.
+Pinchá abajo en `[Run with REPL]` ("Ejejutar con el REPL").
+Puede que tome un tiempo.
+Eventualmente, el REPL va a arrancar y te va a mostrar un símbolo, `user=>`.
+Una vez que veas ese símbolo, pinchá en el botón `[Reload]` ("Recargar").
 
 
-You should see a fun welcome message.
-
-![Testing apps - welcome](img/testing-welcomeclojurebridge.png)
-
-
-Let's try one more sample.
-In the directory tree on the left, click on
-`welcometoclojurebridge` - `src` - `clojurebridge-turtle` -
-`walk.clj`. The `walk.clj` file will open on the right side.
-Like we did before, click "Reload" button.
-
-![Testing apps - walk code](img/nightcode-turtle-walk.png)
-![Testing apps - walk reload](img/nightcode-turtle-walk-reload.png)
+![Testeando aplicaciones - arrancar REPL](/outline/img/nightcode-welcometoclojurebridge-run-with-repl.png)
+![Testeando aplicaciones - REPL iniciado](/outline/img/nightcode-repl-started.png)
+![Testeando aplicaciones - recargar REPL](/outline/img/nightcode-repl-reload.png)
 
 
-An initial image of the turtles app should pop up.
-A small triangle on the center is the *turtle*.
+Deberías ver un mensaje de bienvenida gracioso.
+
+![Testeando aplicaciones - bienvenida](/outline/img/testing-welcomeclojurebridge.png)
 
 
-Type `(forward 40)` on the repl at the bottom of the window.
-You should see the turtle moved upword:
+Probemos una muestra más.
+En el árbol de directorios de la izquierda, pinchá en `welcometoclojurebridge` - `src` - `clojurebridge-turtle` - `walk.clj`.
+El archivo `walk.clj` se va a abrir en el lado derecho.
+Como hicimos antes, pinchá el botón `[Reload]` ("Recargar").
 
-![Testing apps - forward](img/nightcode-turtle-forward-40.png)
+![Testeando aplicaciones - código walk](/outline/img/nightcode-turtle-walk.png)
+![Testeando aplicaciones - recargar walk](/outline/img/nightcode-turtle-walk-reload.png)
+
+
+Debería aparecer una imagen inicial de la aplicación `clojurebridge-turtle`.
+La *tortuga* es el triángulo chiquito en el centro.
+
+
+Tipeá `(forward 40)` en the REPL en la parte inferior de la ventana.
+Deberías ver que la tortuga se movió hacia arriba.
+
+![Testeando aplicaciones - forward](/outline/img/nightcode-turtle-forward-40.png)
 
 
 
-#### Success!
+#### ¡Éxito!
 
-Congratulations! You have opened and run your first Clojure apps, and
-your install and setup are all completed!
+¡Felicitaciones! Has abierto y ejecutado tu primera aplicación en Clojure.
+¡La instalación y configuración está lista!
 
-If you want to know what the turtle (*a small triangle*) can do,
-see [Turtle App API](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md) and
-[How to Walk Turtles](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) for more information.
+Si querés saber qué puede hacer la tortuga (*el triángulo chiquito*), mirá
+[La API de la aplicación Turtle](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md) y
+[How to Walk Turtles (Cómo hacer caminar tortugas)](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md).
