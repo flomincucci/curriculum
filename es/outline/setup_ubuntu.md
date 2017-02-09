@@ -6,7 +6,7 @@ Configuración en Ubuntu
 * Configurar Git
 * Instalar Java
 * Instalar Leiningen
-* Install Nightcode
+* Instalar Nightcode
 * Test your setup
 
 ## Iniciando una terminal
@@ -107,28 +107,28 @@ export PATH=$PATH:/usr/local/bin
 
 Luego de haber ejecutado los comandos de arriba, ejecutá el comando `lein version`. Va a tomar un rato, puesto que, como es la primera vez, va a bajar algunos recursos que necesita. Si lo completa correctamente, ¡genial!. Si no, pedile ayuda a una instructora o instuctor.
 
-## Install Nightcode
+## Instalando Nightcode
 
-Go to the [Nightcode releaes site](http://github.com/oakes/Nightcode/releases).
-On the page there, you should see version numbers and links to download specific version of Nightcode, for example, Nightcode-2.1.0.jar.
-Click the link ending in `.jar` and you will download a file, `Nightcode-x.y.z.jar`.
+Andá al [sitio de descargas de Nightcode](http://github.com/oakes/Nightcode/releases).
+En esa página, deberías ver números de versión y enlaces para bajar versiones específicas de Nightcode (por ejemplo, `Nightcode-2.1.0.jar`).
+Pinchá en el enlace que termina en `.jar`; vas a bajar un archivo, `Nightcode-x.y.z.jar`.
 
-> Don't download platform specific binary releases.
-> Use jar archive.
-> Jar archive is much easier to get started.
+> Evitá bajar los binarios específicos para una plataforma.
+> Usá el archivo `.jar`.
+> Es mucho más fácil al comienzo.
 
-Once the download finished, we want to start the editor.
-To startup, go into your Downloads folder (or wherever you save files from your browser) and run the Nightcode-x.y.z.jar file using `java` command.
+Una vez que la descarga haya terminado, iniciá el editor.
+Para eso, andá a tu carpeta `Descargas` (o donde sea que hayas grabado el archivo `Nightcode-x.y.z.jar` con tu navegador y ejecutalo con el comando `java`.
 
 
-Open a terminal and run the following commands:
+Abrí una terminal y ejecutá los siguientes comandos:
 
 ```bash
-cd ~/Downloads/
+cd ~/Descargas/
 java -jar Nightcode-2.1.0.jar
 ```
 
-![Nightcode](img/nightcode-startup.png)
+![Nightcode](/outline/img/nightcode-startup.png)
 
 
 ## Testing your setup
