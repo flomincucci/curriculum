@@ -5,7 +5,7 @@ Configuración en Ubuntu
 * Instalar Git
 * Configurar Git
 * Instalar Java
-* Install Leiningen
+* Instalar Leiningen
 * Install Nightcode
 * Test your setup
 
@@ -87,25 +87,25 @@ Otra opción es bajar el Java Development Kit (JDK) de Oracle desde
 En este caso, necesitás definir las variables de entorno `JAVA_HOME` y `PATH` luego de extraer el archivo.
 
 
-## Install Leiningen
+## Instalando Leiningen
 
-Leiningen is a tool used on the command line to manage Clojure projects.
+Leiningen es una herrmienta para administrar proyectos Clojure desde la terminal.
 
-Go to the [Leiningen website](http://leiningen.org/). You will see a link to the `lein` script under the "Install" heading. Right-click that link and choose "Save Link As...". Save it in your Downloads directory.
+Andá al [sitio de Leiningen](http://leiningen.org/). Vas a ver un enlace al script `lein` en la sección "Install" ("Instalación"). Pinchá en ese enlace con el boton secundario del ratón y elegí "Guardar enlace como...". Guardalo en tu directorio Descargas.
 
-![Leiningen site](img/leiningen_site.png)
-![Leiningen site](img/lein_install.png)
+![sitio de Leiningen](/outline/img/leiningen_site.png)
+![sitio de Leiningen](/outline/img/lein_install.png)
 
-After that, run the following commands in your terminal. You will be prompted to enter your password.
+Luego de eso, ejecutá el siguiente comando en tu terminal. Se te va a pedir tu contraseña.
 
 ```
 sudo mkdir -p /usr/local/bin/
-sudo mv ~/Downloads/lein* /usr/local/bin/lein
+sudo mv ~/Descargas/lein* /usr/local/bin/lein
 sudo chmod a+x /usr/local/bin/lein
 export PATH=$PATH:/usr/local/bin
 ```
 
-After you run the above commands, run the `lein version` command. It should take a while to run, as it will download some resources it needs the first time. If it completes successfully, you are golden! If not, ask an instructor for help.
+Luego de haber ejecutado los comandos de arriba, ejecutá el comando `lein version`. Va a tomar un rato, puesto que, como es la primera vez, va a bajar algunos recursos que necesita. Si lo completa correctamente, ¡genial!. Si no, pedile ayuda a una instructora o instuctor.
 
 ## Install Nightcode
 
