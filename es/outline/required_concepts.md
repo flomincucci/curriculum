@@ -1,40 +1,40 @@
-Concepts required for building the app
+Conceptos requeridos para contruir la aplicación
 -------------------------------------
-- Light Table 
-- namespace (nothing in depth) 
-- instarepl 
-- http 
-- require 
-- def 
-- symbols 
-- str 
-- call a function 
-- function arguments 
-- URL 
-- maps
-- defn 
-- use a key of a map as a selector function 
-- first 
-- second 
-- doc-string 
-- let 
-- merge 
-- and 
-- lein 
-- lein project setup 
-- ring 
-- lein ring plugin 
-- call a function that you define 
-- empty map {}
-- into{} 
+- Light Table
+- namespace (sin mucha profundidad)
+- instarepl
+- http
+- require
+- def
+- symbols
+- str
+- invocar (llamar) a una función
+- argumentos de funciones
+- URL
+- mapas
+- defn
+- usar una llave de un mapa como una función de selección
+- first
+- second
+- doc-string
+- let
+- merge
+- and
+- lein
+- configuración de un proyecto Leiningen
+- ring
+- lein ring plugin
+- llamar una función que vos definís
+- mapa vacío {}
+- into{}
 - take
-- URL query string 
-- JSON 
-- sort-by 
+- URL query string
+- JSON
+- sort-by
 
-Required concepts that are missing in the curriculum
+Conceptos requeridos que faltan en la currícula
 ----------------------------------------------------
-- return a map from a function
-- for (include :when modifier) 
-- read-string 
-- using the command line
+- devolver un mapa desde una función
+- for (incluir el modificador :when)
+- read-string
+- usar la línea de comandos
