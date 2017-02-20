@@ -58,7 +58,7 @@ Valores Simples
 ```clojure
 "Hola, Mundo!"
 "Las cadenas pueden contener muchos, muchos caracteres"
-"Aubrey said, \"I think we should go to the Orange Julius.\""
+"Alicia dijo, \"Podemos ir a tomar el té.\""
 ```
 </section>
 
@@ -70,7 +70,7 @@ Valores Simples
 
 > Un booleano indica que algo es verdadero o es falso y en Clojure los
 > escribimos como `true` o `false`, respectivamente. Cuando programamos, es
-> común hacer preguntas del tipo ""¿Hoy es el cumpleaños de tal persona?" o
+> común hacer preguntas del tipo "¿Hoy es el cumpleaños de tal persona?" o
 > "¿Esta materia se dicta en el primer cuatrimestre?"  para saber si algo es
 > cierto. La respuesta a estas preguntas, es un valor booleano.
 {: ng-show="block31" .description}
@@ -157,7 +157,7 @@ nil
 > son siempre exactas. Las podemos reconocer por la barra inclinada "/":
 {: ng-show="block101" .description}
 
-> Es importante tener en cuenta que, al igual que en la clases de matemática, el [denominador](https://es.wikipedia.org/wiki/Fracci%C3%B3n) de una fracción no puede ser igual a `0`.
+> Es importante tener en cuenta que, al igual que en la clase de matemática, el [denominador](https://es.wikipedia.org/wiki/Fracci%C3%B3n) de una fracción no puede ser igual a `0`.
 {: ng-show="block101" .description}
 
 ```clojure
@@ -326,11 +326,11 @@ promedio-frutas
 
 {% comment %}
 
-:star2: El enlace de abajo es para ser usado en la presentación. Podés volver a [README.md](../README.md). :star2:
+:star2: El link siguiente es sólo para para los slides. Andá al[README.md](../README.md). :star2:
 
 {% endcomment %}
 
 <section>
-Podés volver al <a href="javascript:;" onClick="Reveal.slide(1);">principio de la presentación</a>,
-or al [índice del programa](/curriculum/#/1).
+Volvé al <a href="javascript:;" onClick="Reveal.slide(1);">primer slide</a>,
+o andá al [outline del curriculum](/curriculum/es/#/1).
 </section>
