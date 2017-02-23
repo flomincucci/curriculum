@@ -13,7 +13,7 @@ Conceptos requeridos para contruir la aplicación
 - URL
 - mapas
 - defn
-- usar una llave de un mapa como una función de selección
+- usar una clave de un mapa como una función de selección
 - first
 - second
 - doc-string
