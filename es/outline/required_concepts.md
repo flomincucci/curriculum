@@ -1,4 +1,4 @@
-Conceptos requeridos para contruir la aplicación
+Conceptos requeridos para construir la aplicación
 -------------------------------------
 - Light Table
 - namespace (sin mucha profundidad)
