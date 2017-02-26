@@ -11,11 +11,11 @@ macOS  Setup
 
 ## Abrir una Terminal
 
-Para estas instrucciones, y para casi toda la clase, necesitaras tener una terminal, o linea de commando, disponible.
-Esta es una interfaz para hablar con tu computadora basada en texto, y puedes abrirla ejecutando Terminal.app, la cual se encuentra en el directorio `/Applications/Utilities`.
-Si nunca utilizaste la terminal anteriormente, tal vez quieras [leer lo basico sobre la linea de comandos](http://blog.teamtreehouse.com/command-line-basics).
+Para estas instrucciones, y para casi toda la clase, necesitarás tener una terminal, o linea de commando, disponible.
+Esto es una interfaz para hablar con tu computadora basada en texto, y puedes abrirla ejecutando Terminal.app, la cual se encuentra en el directorio `/Applications/Utilities`.
+Si nunca utilizaste la terminal anteriormente, tal vez quieras [leer lo básico sobre la linea de comandos](http://blog.teamtreehouse.com/command-line-basics).
 
-Ahora ve y abre la terminal. Debería verse algo similiar a esto:
+Ahora por favor ve y abre la terminal. Debería verse algo similiar a esto:
 
 ![blank terminal](img/os_x/blank_terminal.png)
 
@@ -25,21 +25,21 @@ Para el resto de este setup, te diré que comandos ejecutar en tu terminal. Cuan
 
 #Instala Git
 
-Para verificar si ya tienes git instalado tipea  `git --version`. Si posees la version `git version 1.9.3 (Apple Git-50)` o una version superior estaras bien.
+Para verificar si ya tienes git instalado tipea  `git --version`. Si posees la versión `git version 1.9.3 (Apple Git-50)` o una version superior estaras bien.
 
 Si no, visita [git-scm](http://git-scm.com). Haz click en "Downloads para Mac".
 El instalador de git debería bajar automaticamente. Si no lo hace, haz click en el link para realizar una descarga manual.
-Una vez que la descarga halla finalizado, abre __~/Downloads/__ en Finder y haz doble click en el archivo descargado (con el nombre similar a __git-2.0.1-intel-universal-snow-leopard.dmg__)
+Una vez que la descarga haya finalizado, abre __~/Downloads/__ en Finder y haz doble click en el archivo descargado (con el nombre similar a __git-2.0.1-intel-universal-snow-leopard.dmg__)
 Esto montará la imagen y luego abre una ventana de Finder. Haz doble-click en el paquete instalador (con el nombre similar a __git-2.0.1-intel-universal-snow-leopard.pkg__)
 Tal vez aparezca un mensaje diciendo que el instalador no puede ser abierto porque el origen es de un desarrollador no identificado.
 Si esto ocurre, haz click en "OK", luego click derecho (o control-click) sobre el archivo y selecciona "Open" del menú contextual.
 Tal vez un nuevamente aparezca un mensaje diciendo que el origen del instalador es de un desarrollador no indentificado, pero esta vez tendrás la opción de hacer click en "Open". Hazlo.
-Esto iniciará el instalador. Sigue sus indicaciones, y ingresa tu contraseña cuando te lo indiqué.
-Una vez que halla finalizado este proceso, es seguro desmontar la imagen del disco (haciendo click en el botón de ejectar en Finder") y luego borra el archivo de la carpeta Downloads.
+Esto iniciará el instalador. Sigue sus indicaciones, y ingresa tu contraseña cuando te lo indique.
+Una vez que haya finalizado este proceso, es seguro desmontar la imagen del disco (haciendo click en el botón de ejectar en Finder") y luego borra el archivo de la carpeta Downloads.
 
 ## Configura Git
 
-Si ya haz utilizado Git anteriormente entonces deberias poseer user.name y user.email configurado.
+Si ya haz utilizado Git anteriormente entonces deberías poseer user.name y user.email configurado.
 Si no haz utilizado anteriormente, tipea lo siguiente en la terminal:
 
 ```bash
@@ -56,7 +56,7 @@ Resultado esperado:
 
 `git config --get user.email`
 Resultado esperado:
-`tu e-mail``
+`tu e-mail`
 
 ## Asegurate que Java esté instalado
 
@@ -66,7 +66,7 @@ Resultado esperado:
 > 
 > Si tienes problema el articulo <http://osxdaily.com/2015/10/17/how-to-install-java-in-os-x-el-capitan/>, puede ayudarte.
 
-Ejecuta `java -version` en tu terminal.  Si no tienes Java instalado, OS X te preguntará si deseas instalarlo (esto si tu version de OS X es 10.10 o más vieja). Sigue todas las instrucciones OS X te dará, luego retoma hasta esta parte del tutorial y ejecuta `java -version` nuevamente.
+Ejecuta `java -version` en tu terminal.  Si no tienes Java instalado, OS X te preguntará si deseas instalarlo (esto si tu version de OS X es 10.10 o más vieja). Sigue todas las instrucciones macOS te dará, luego retoma hasta esta parte del tutorial y ejecuta `java -version` nuevamente.
 
 Si Java está instalado, verás algo como esto en tu terminal:
 ![Java version](img/os_x/java_version.png)
@@ -75,7 +75,7 @@ Los detalles de la version de Java puede que sean diferentes de lo mostrado; est
 
 ## Instalar Leiningen
 
-Leiningen es una herramienta usada desde la linea de comando para manejar proyectos de Clojure.
+Leiningen es una herramienta usada desde la línea de comando para manejar proyectos de Clojure.
 Para instalar `lein` ejecuta los siguientes comandos en tu terminal; se te pedirá que ingreses tu contraseña para al menos el primer comando que comienza con `sudo` (El caracter `%` es un simbolo típico del prompt de la linea de comandos, no hace falta tipearlo):
 
 ```bash
@@ -102,7 +102,7 @@ Luego que hayas configurado como descripto anteriormente, ejecuta el comando `le
 ## Instalar Nightcode
 
 Ve al [sitio de releases de Nightcode](http://github.com/oakes/Nightcode/releases).
-En el sitio, podrás ver números de version de Nightcode y link para descargar versiones especificas de Nightcode, por ejemplo Nightcode-2.1.jar.
+En el sitio, podrás ver números de version de Nightcode y link para descargar versiones especificas de Nightcode, por ejemplo Nightcode-2.3.jar.
 Click en el link que termina con `.jar` y descargaras un archivo, `Nightcode-x.y.z.jar`.
 
 > No descargues releases especificos para diferentes plataformas
@@ -117,7 +117,7 @@ Abre una terminal y ejecuta los siguientes comandos:
 
 ```bash
 cd ~/Downloads/
-java -jar Nightcode-2.1.0.jar
+java -jar Nightcode-2.3.0.jar
 ```
 
 ![Nightcode](img/nightcode-startup.png)
@@ -146,7 +146,7 @@ lein repl
 
 El inicio de esto puede llegar a tardar un buen rato la primera vez.
 Leiningen descarga las librerias necesarias para poder correr Clojure.
-Cuando Leinigen inicia, deberias ver el prompt `user =>` en tu terminal. 
+Cuando Leinigen inicia, deberías ver el prompt `user =>` en tu terminal. 
 
 ![Testing lein repl](img/os_x/testing-lein-repl.png)
 
@@ -155,7 +155,7 @@ Es una terminal especial para Clojure.
 
 En el REPL prompt, tipea `(+ 1 1)` y luego presiona Enter. Obtuviste la respuesta `2`? Genial!
 
-Tu instalación de Leinigen se ve bien. Ahora, presiona las teclas Control y la tecla D en tu teclado a la vez (abreviado Ctrl+D). Esto debería sacarte fuera el REPL de Clojure y llevarte a tu prompt en la terminal. Luego, la terminal debería mostrarte el siguiente mensaje: `user=> By for now!`
+Tu instalación de Leinigen se ve bien. Ahora, presiona a la vez las teclas Control y la tecla D en tu teclado (abreviado Ctrl+D). Esto debería sacarte fuera el REPL de Clojure y llevarte a tu prompt en la terminal. Luego, la terminal debería mostrarte el siguiente mensaje: `user=> By for now!`
 
 #### Clonando tu repositorio Github
 
@@ -188,7 +188,7 @@ README.md       outline         project.clj     resources       src
 Si Nightcode no sido inicido o fue cerrado, abrelo tipeando lo siguiente en la terminal:
 
 ```bash
-java -jar Nightcode-2.1.0.jar
+java -jar Nightcode-2.3.0.jar
 ```
 Al la derecha del final de la pantalla, typea `(+ 1 1)` en la ventana. Debería verse similar a la siguiente imagen:
 
