@@ -19,7 +19,7 @@ Ahora ve y abre la terminal. Debería verse algo similiar a esto:
 
 ![blank terminal](img/os_x/blank_terminal.png)
 
-El prompt (dónde tiperas tus comandos) puede que luzca diferente: usualmente muestra el nombre de tu computadora y el nombre de usuario, ademas de la carpeta o directorio donde te encuentres actualmente.
+El prompt (dónde tipearas tus comandos) puede que luzca diferente: usualmente muestra el nombre de tu computadora y el nombre de usuario, ademas de la carpeta o directorio donde te encuentres actualmente.
 
 Para el resto de este setup, te diré que comandos ejecutar en tu terminal. Cuando diga eso, me refiero a "tipea el comando en la terminal y luego presiona la tecla Enter".
 
@@ -60,13 +60,13 @@ Resultado esperado:
 
 ## Asegurate que Java esté instalado
 
-> Si posees la version 10.11 de OS X (El Capitan), no tienes Java instalado.
-> Tienes que instalar Java
+> Si posees la version 10.11 de OS X (El Capitan), no tienes Java instalado. Tienes que instalar Java.
 > Descarga Java de <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html> y sigue las instrucciones. Cuando la instalación finalice, setea la variable de entorno `JAVA_HOME` a traves de la terminal
 > `export JAVA_HOME=/usr/libexec/java_home -v 1.8`
+> 
 > Si tienes problema el articulo <http://osxdaily.com/2015/10/17/how-to-install-java-in-os-x-el-capitan/>, puede ayudarte.
 
-Ejecuta `java -version ` en tu terminal.  Si no tienes Java instalado, OS X te preguntará si deseas instalarlo (esto si tu version de OS X es 10.10 o más vieja). Sigue todas las instrucciones OS X te dará, luego retoma hasta esta parte del tutorial y ejecuta `java -version` nuevamente.
+Ejecuta `java -version` en tu terminal.  Si no tienes Java instalado, OS X te preguntará si deseas instalarlo (esto si tu version de OS X es 10.10 o más vieja). Sigue todas las instrucciones OS X te dará, luego retoma hasta esta parte del tutorial y ejecuta `java -version` nuevamente.
 
 Si Java está instalado, verás algo como esto en tu terminal:
 ![Java version](img/os_x/java_version.png)
