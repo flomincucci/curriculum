@@ -13,13 +13,13 @@ Currícula
 ------
 <http://clojurebridgeba.github.io/curriculum/es>
 
-* [Introducción a la Programación con Clojure](outline/intro.html)
-* [Valores simples](outline/simple_values.html)
-* [Estructuras de Datos](outline/data_structures.html)
-* [Funciones](outline/functions.html)
+* [Introducción a la Programación con Clojure](outline/intro.md)
+* [Valores simples](outline/simple_values.md)
+* [Estructuras de Datos](outline/data_structures.md)
+* [Funciones](outline/functions.md)
 * [App Capstone: Dibujando líneas](https://github.com/ClojureBridge/drawing/blob/master/curriculum/first-program.md)
-* [Control de Flujo y Lógica](outline/flow_control.html)
-* [[bonus] Secuencias](outline/sequences.html)
+* [Control de Flujo y Lógica](outline/flow_control.md)
+* [[bonus] Secuencias](outline/sequences.md)
 
 * Opciones de la App Capstone - Part. 2
 
