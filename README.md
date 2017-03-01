@@ -1,9 +1,7 @@
 ClojureBridge Curriculum
 ========================
 
-Other languages:
-
-* [Español](es/README.md)
+* [Versión en español](es/README.md)
 
 Teaching guide
 -------------
