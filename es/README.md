@@ -21,7 +21,8 @@ Currícula
 * [Control de Flujo y Lógica](outline/flow_control.md)
 * [[bonus] Secuencias](outline/sequences.md)
 
-* Opciones de la App Capstone - Part. 2
+Opciones de la App Capstone - Part. 2
+----------------
 
     - [Turtles Walk](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) (más estudio de funciones)
 
