@@ -3,7 +3,7 @@ Currícula de ClojureBridge
 
 Guía para instructores (en inglés)
 -------------
-* [ClojureBridge Teacher's Guide](TEACHING.md)
+* [ClojureBridge Teacher's Guide](../TEACHING.md)
 
 Guía de configuración
 ------------
