@@ -1,0 +1,40 @@
+Conceptos requeridos para construir la aplicación
+-------------------------------------
+- Light Table
+- namespace (sin mucha profundidad)
+- instarepl
+- http
+- require
+- def
+- symbols
+- str
+- invocar (llamar) a una función
+- argumentos de funciones
+- URL
+- mapas
+- defn
+- usar una clave de un mapa como una función de selección
+- first
+- second
+- doc-string
+- let
+- merge
+- and
+- lein
+- configuración de un proyecto Leiningen
+- ring
+- lein ring plugin
+- llamar una función que vos definís
+- mapa vacío {}
+- into{}
+- take
+- URL query string
+- JSON
+- sort-by
+
+Conceptos requeridos que faltan en la currícula
+----------------------------------------------------
+- devolver un mapa desde una función
+- for (incluir el modificador :when)
+- read-string
+- usar la línea de comandos
