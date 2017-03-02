@@ -1,12 +1,12 @@
 # Resumen de Quil
 
-## Formas -- (funcionan únicamente dentro de la función draw!)
+## Formas -- (¡Funcionan únicamente dentro de la función draw!)
 
 ```clj
 (line x1 y1 x2 y2)
 ```
 
-Dibuja una línea comprendida entre dos puntos. `x1`, `y1`, `x2`, e
+Dibuja una línea recta comprendida entre dos puntos. `x1`, `y1`, `x2`, e
 `y2` son números y se usan para indicar las **coordenadas** de dichos puntos:
 la cantidad de pixeles desde el borde superior (`y`) o el borde izquierdo de
 la pantalla (`x`).
@@ -31,7 +31,7 @@ Dibuja un óvalo en la pantalla.
 (color r g b a)
 ```
 
-Un color consiste en cuatro números que varían entre `0` y `255`. Los primeros tres valores representan los colores rojo, verde y azul que se "mezclan" para formar un nuevo color. El cuarto número define la opacidad. Por ejemplo `(color 0 0 255 128)` es un color azul con una transparencia del 50% (mitad opaco, mitad transparente).
+Un color consiste en cuatro números que varían entre `0` y `255`. Los primeros tres valores representan los colores rojo, verde y azul que se "mezclan" para formar un nuevo color. El cuarto número define la opacidad. Por ejemplo, `(color 0 0 255 128)` es un color azul con una transparencia del 50% (mitad opaco, mitad transparente).
 
 ```clj
 (background color)
