@@ -47,20 +47,20 @@ Secuencias
 #### Resultados de `first`
 
 ```clojure
-(nombres-de-tortugas)
+(turtle-names)
 ;=> [:trinity :neo :oracle :cypher] ; vector
-(first (nombres-de-tortugas))
-;=> :trinity                        ; el primer item
+(first (turtle-names))
+;=> :trinity                        ; primer elemento
 
-(:trinity (estado))
-;=> {:x 0, :y 0, :angulo 90, :color [30 30 30]}  ; map
-(first (:trinity (estado)))
-[:x 0]                                          ; el primer item
+(:trinity (state))
+;=> {:x 0, :y 0, :angle 90, :color [30 30 30]}  ; map
+(first (:trinity (state)))
+[:x 0]                                          ; primer elemento
 
-(first "Hola, mundo!!")  ; string
-;=> \H                   ; el primer item
+(first "Hello, World!")  ; string
+;=> \H                   ; primer elemento
 
-(first :trinity)         ; las palabras clave no son seq-uenciables
+(first :trinity)         ; la palabra no es seq-uenciable
 ;=> IllegalArgumentException Don't know how to create ISeq from:
 clojure.lang.Keyword  clojure.lang.RT.seqFrom (RT.java:528)
 ```
@@ -97,16 +97,16 @@ clojure.lang.Keyword  clojure.lang.RT.seqFrom (RT.java:528)
 
 ```clojure
 ;; ejemplo de doseq
-(doseq [n (nombres-de-tortugas)] (forward n 40))
+(doseq [n (turtle-names)] (forward n 40))
 ```
 </section>
 
 <section>
 #### EJERCICIO 1
 
-* [Tortugas caminando](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) (más estudio de funciones)
+* [Turtles Walk](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) (más estudio de funciones)
     - sección 5 y posteriores
-* [Copos de nieve](https://github.com/ClojureBridge/drawing/blob/master/curriculum/create-something.md) (animación)
+* [Snowflakes](https://github.com/ClojureBridge/drawing/blob/master/curriculum/create-something.md) (animación)
     - paso 4 y siguientes
 * [Twinkle Twinkle Little Star](https://github.com/ClojureBridge/tones/blob/master/curriculum/01-piano-chords.md) (haciendo sonido)
     - función `chord` y más adelante
@@ -131,8 +131,8 @@ clojure.lang.Keyword  clojure.lang.RT.seqFrom (RT.java:528)
 
 ```clojure
 ;; asumiendo que hay más de una tortuga
-(def nombres (nombres-de-tortugas))
-(dotimes [n (count nombres)] (right (nth nombres n) (* 45 n)))
+(def names (turtle-names))
+(dotimes [n (count names)] (right (nth names n) (* 45 n)))
 ```
 </section>
 
@@ -150,7 +150,7 @@ clojure.lang.Keyword  clojure.lang.RT.seqFrom (RT.java:528)
 
 {% comment %}
 
-:star2: Un enlace inferior es sólo para una diapositiva. En ulgar de eso, ve a [README.md](../README.md) :star2:
+:star2: Un enlace inferior es sólo para una diapositiva. Ve a [README.md](../README.md) :star2:
 
 {% endcomment %}
 
