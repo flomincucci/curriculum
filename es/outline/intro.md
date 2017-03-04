@@ -20,7 +20,6 @@ Introducción a la Programación en Clojure
 * ¿Por qué Clojure?
 * ¿En qué es bueno Clojure?
 * ¿Qué tal se ve Clojure?
-    - Comentarios
 * Qué es el REPL?
 * El REPL en acción
 </section>
@@ -37,10 +36,10 @@ Introducción a la Programación en Clojure
 > Java.
 {: ng-show="block11" .description}
 
-> Entonces ¿por qué estamos enseñanado Clojure? Aunque no es tan popular
+> Entonces ¿por qué estamos enseñando Clojure? Aunque no es tan popular
 > como algunos de esos lenguajes, estamos usando Clojure por tres cualidades
 > que tiene que lo hacen ideal como primer lenguaje para aprender
-> (o un gran lenguaje para aprender) además de otros que tal vez ya conozcas:
+> (o un gran lenguaje para aprender!) además de otros que tal vez ya conozcas:
 {: ng-show="block11" .description}
 
 #### Clojure es _simple_ <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
@@ -52,18 +51,18 @@ Introducción a la Programación en Clojure
 > del lenguaje.
 {: ng-show="block12" .description}
 
-#### Clojure es de _proposito general_ <button class="link" ng-bind-html="details" ng-model="block13" ng-click="block13=!block13"></button>
+#### Clojure es de _propósito general_ <button class="link" ng-bind-html="details" ng-model="block13" ng-click="block13=!block13"></button>
 
-> Clojure es de _proposito general_. Algunos lenguajes tienen un foco específico.
+> Clojure es de _propósito general_. Algunos lenguajes tienen un foco específico.
 > JavaScript, por ejemplo, fue tradicionalmente usado solo en páginas web
 > (aunque eso ha cambiado de alguna manera). Objective-C es usado principalmente
 > para aplicaciones iPhone. Hoy vamos a hacer una aplicación para dibujar,
 > pero puedes usar Clojure para cualquier tipo de aplicación facilmente.
 {: ng-show="block13" .description}
 
-#### Clojure es _diversión_ <button class="link" ng-bind-html="details" ng-model="block14" ng-click="block14=!block14"></button>
+#### Clojure es _divertido_ <button class="link" ng-bind-html="details" ng-model="block14" ng-click="block14=!block14"></button>
 
-> Clojure es _diversión_. Eso es una cuestión de opinión, por supuesto, pero
+> Clojure es _divertido_. Esto es una cuestión de opinión, por supuesto, pero
 > pensamos que es verdad. Esperamos que durante este curso experimenten
 > la alegría de construir un programa hecho en Clojure y hacer algo
 > poderoso y sorprendente.
@@ -82,7 +81,7 @@ Introducción a la Programación en Clojure
 
 #### Procesamiento de datos <button class="link" ng-bind-html="details" ng-model="block22" ng-click="block22=!block22"></button>
 
-> Clojure es reconocido por hacer un buen procesamiento de datos. Esto es
+> Clojure es reconocido por ser bueno para el procesamiento de datos. Esto es
 > porque tiene un buen set de estructuras de datos. Es decir, que tiene muchas
 > maneras incorporadas de representar datos que lo hacen fácil y poderoso.
 {: ng-show="block22" .description}
@@ -199,7 +198,7 @@ Introducción a la Programación en Clojure
 
 **R**ead, **E**val, **P**rint, **L**oop
 
-![El repl de Nightcode](img/repl.png)
+![El repl de Nightcode](/curriculum/outline/img/repl.png)
 
 </section>
 
@@ -244,7 +243,7 @@ Introducción a la Programación en Clojure
 1. Inicia Nightcode
 2. Importa `myproject` <br/> (el cual creaste mientras testeabas el setup de leiningen)
 3. Abrí `core.clj` <br/>(`myproject` -> `src` -> `myproject` -> `core.clj`
-4. Hacé click en el  __InstREPL__ botón
+4. Hacé click en el botón  __InstaREPL__
 5. Escribí las funciones Clojure escritas abajo y observa qué pasa
 
 ```clojure
@@ -275,7 +274,7 @@ Introducción a la Programación en Clojure
 
 (Suponiendo que el EJECICIO 2 está terminado)
 
-* Tipeá `(right 90)` y "enter" en el REPL (al fondo) ![Run with REPL pane](img/run-with-repl.png)
+* Tipeá `(right 90)` y "enter" en el REPL (al fondo) ![Run with REPL pane](/curriculum/outline/img/run-with-repl.png)
 * Mirá qué pasa con la tortuga
 * Pegale una mirada a [Tortugas App API](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md) y
 [Cómo pasear Tortugas](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md)
@@ -285,10 +284,10 @@ Introducción a la Programación en Clojure
 <section>
 #### EJERCICIO 4: Mirar los docs de Clojure
 
-* En el fondo del REPL, intentá mirar la  documentación para las funciones usadas
+* En el fondo del REPL, intentá mirar la documentación para las funciones usadas
 * Podés usar el comando `(doc function-name)` para esto
 * Probá `(doc +)` y `(doc forward)` en el REPL
-* Probá algun otra función que hayamos usado, por ejemplo, `-`, `*`, o `doc`
+* Probá alguna otra función que hayamos usado, por ejemplo, `-`, `*`, o `doc`
 </section>
 
 {% comment %}
