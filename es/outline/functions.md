@@ -34,11 +34,11 @@ Funciones
 > Ya has visto algunas funciones, como `count`, `conj`,
 > `first`, y `rest`. También usamos funciones en toda la arimética que 
 > hicimos hasta ahora: `+`, `-`, `*`, y `/`. 
-> ¿Pero qué significa ser una función?
+> Pero, ¿qué significa ser una función?
 {: ng-show="block11" .description}
 
 > Una *función* es una porción de código discreta e independiente, que recibe algunos
-> valores (llamados *parámetros* o *argumentos*)), y devuelve un valor.
+> valores (llamados *parámetros* o *argumentos*), y devuelve un valor.
 {: ng-show="block11" .description}
 
 > Referencia: [Basics of Function](http://clojurebridge.github.io/community-docs/docs/clojure/function-creation/)
@@ -87,7 +87,7 @@ Funciones
 
 > Las funciones también pueden tomar más de un argumento. Hagamos
 > una función `forward-right-with-len` que además de la tortuga,
-> recibe una distancia hacia adelante.
+> reciba una distancia hacia adelante.
 {: ng-show="block41" .description}
 
 ```clojure
@@ -108,7 +108,7 @@ Funciones
 
 1. Escribir una función
   * Ve a `walk.clj`
-  * En el editor, escribe la función `forward-right` que apareció en la presentación (abajo).
+  * En el editor, escribe la función `forward-right` que aparece en la presentación (abajo).
   * (Optional) Guarda `walk.clj`
   * Selecciona la función `forward-right` entera y pulsa "Eval Selection"
 2. Usa una función
@@ -129,11 +129,11 @@ Funciones
 {: .slide_title .slide}
 
 * Ve a `walk.clj`
-* En el editor, escribe la función `forward-right-with-len-ang` que recibe tres 
+* En el editor, escribe la función `forward-right-with-len-ang`, que recibe tres
   argumentos: turtle, len, y angle (extensión de `forward-right-with-len`)
 * Selecciona la función `forward-right-with-len-ang` entera y pulsa Reload Selection.
 * En el panel del REPL, escribe `(forward-right-with-len-ang :trinity 60 120)`
-* Repite lo anterior, evaluando varias veces la función en el REPL..
+* Repite lo anterior, evaluando varias veces la función en el REPL.
 </section>
 
 
@@ -156,8 +156,8 @@ Funciones
 #### Dos clases de funciones <button class="link" ng-bind-html="details" ng-model="block62" ng-click="block62=!block62"></button>
 
 > Clojure tiene dos clases de funciones:
-> 1. función que devuelve un valor
-> 2. función que devuelve true o false
+> 1. funciones que devuelven un valor
+> 2. funciones que devuelven true o false
 > A las funciones de la segunda clase se las llama *predicado*s.
 {: ng-show="block62" .description}
 
@@ -187,7 +187,7 @@ Funciones
 > Algunas de las funciones más poderosas que puedes utilizar con colecciones
 > pueden tomar otras funciones como argumentos.
 > Ésta es una de las cosas más mágicas acerca de Clojure--y varios otros lenguajes de programación.
-> Ésta es una idea complicada, así que puede no parecer tener mucho sentido al principio.
+> Ésta es una idea complicada, así que puede que no parezca tener mucho sentido al principio.
 > Veamos un ejemplo para aprender más sobre esto.
 {: ng-show="block71" .description}
 
@@ -278,7 +278,7 @@ Funciones
 > Antes de continuar, debes entender que _siempre_ eres libre de 
 > nombrar tus funciones. Hacer eso no tiene nada de malo.
 > Sin embargo, hay muchísimo código Clojure con funciones anónimas,
-> por lo que deberías ser capaz de entenderlo.
+> por lo que debes ser capaz de entenderlo.
 {: ng-show="block202" .description}
 
 ```clojure
@@ -332,8 +332,8 @@ Funciones
 
 #### <button class="link" ng-bind-html="details" ng-model="block305" ng-click="block305=!block305"></button>
 
-> Podemos asignar un nombre a un valor utilizando `let`, como `def`.
-> Cuando un nombre es asignado a un valor, el nombre se llama *símbolo.
+> Podemos asignar un nombre a un valor utilizando `let`, igual que con `def`.
+> Cuando un nombre es asignado a un valor, el nombre se llama *símbolo*.
 {: ng-show="block305" .description}
 
 > Referencia: [Assignment let](http://clojurebridge.github.io/community-docs/docs/clojure/let/)
