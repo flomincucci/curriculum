@@ -91,7 +91,7 @@ clojure.lang.Keyword  clojure.lang.RT.seqFrom (RT.java:528)
 {: ng-show="block31" .description}
 
 > La función `doseq` recibe como argumento un vector de asociaciones de
-> símbolo-valor, que puede presentar un aspecto extraño: `[nombre secuencia]`. Al iterar sobre cada elemento
+> nombre-valor, que puede presentar un aspecto extraño: `[nombre secuencia]`. Al iterar sobre cada elemento
 > de `secuencia`, el elemento iterado se asigna a `nombre`.
 {: ng-show="block32" .description}
 
