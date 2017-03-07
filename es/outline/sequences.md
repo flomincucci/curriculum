@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sequencias
+title: Secuencias
 permalink: /es/outline/sequences.html
 ---
 
@@ -60,14 +60,14 @@ Secuencias
 (first "Hello, World!")  ; string
 ;=> \H                   ; primer elemento
 
-(first :trinity)         ; la palabra no es seq-uenciable
+(first :trinity)         ; la palabra clave no es seq-uenciable
 ;=> IllegalArgumentException Don't know how to create ISeq from:
 clojure.lang.Keyword  clojure.lang.RT.seqFrom (RT.java:528)
 ```
 </section>
 
 <section ng-controller="NarrativeController">
-### Funciones de secuencias
+### Funciones para secuencias
 <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
 
 > Clojure es muy bueno para *iterar* sobre una secuencia.
@@ -90,7 +90,7 @@ clojure.lang.Keyword  clojure.lang.RT.seqFrom (RT.java:528)
 > que se le pasa como argumento.
 {: ng-show="block31" .description}
 
-> La función `doseq` function recibe como argumento un vector de asociaciones de 
+> La función `doseq` recibe como argumento un vector de asociaciones de
 > símbolo-valor, que puede presentar un aspecto extraño: `[nombre secuencia]`. Al iterar sobre cada elemento
 > de `secuencia`, el elemento iterado se asigna a `nombre`.
 {: ng-show="block32" .description}
