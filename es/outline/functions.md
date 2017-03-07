@@ -52,12 +52,12 @@ Funciones
 <section ng-controller="NarrativeController">
 #### Un ejemplo de función <button class="link" ng-bind-html="details" ng-model="block21" ng-click="block21=!block21"></button>
 
-> * `defn` indica que estamos vamos a definir una función.
+> * `defn` indica que vamos a definir una función.
 > * `forward-right` es el *nombre* de esta función.
 > * La cadena de texto en la siguiente línea es la documentación de la función,
 >   que explica qué hace la función. Esta línea es opcional.
 > * `[turtle]` es la lista de *argumentos*. Aquí tenemos un argumento llamado `turtle`.
-> * `(forward turtle 60) (right turtle 135)` es el *cuerpo* de la funciuón. 
+> * `(forward turtle 60) (right turtle 135)` es el *cuerpo* de la función.
 >   Esto es lo que se ejecuta cuando usamos la función.
 {: ng-show="block21" .description}
 
@@ -92,7 +92,7 @@ Funciones
 
 ```clojure
 (defn forward-right-with-len
-  "Datos turtle y length, adelanta turtle e inclina su cabeza"
+  "Dados turtle y length, adelanta turtle e inclina su cabeza"
   [turtle len]
   (forward turtle len)
   (right turtle 135))
@@ -187,7 +187,7 @@ Funciones
 > Algunas de las funciones más poderosas que puedes utilizar con colecciones
 > pueden tomar otras funciones como argumentos.
 > Ésta es una de las cosas más mágicas acerca de Clojure--y varios otros lenguajes de programación.
-> Ésta es una complicada, así que puede no parecer tener mucho sentido al principio.
+> Ésta es una idea complicada, así que puede no parecer tener mucho sentido al principio.
 > Veamos un ejemplo para aprender más sobre esto.
 {: ng-show="block71" .description}
 
@@ -225,7 +225,7 @@ Funciones
 > `reduce`, y se usa para convertir colecciones en un único valor.
 {: ng-show="block111" .description}
 
-> `reduce` recibe los dosp primeros elementos de la colección que recibió,
+> `reduce` recibe los dos primeros elementos de la colección que recibió,
 > e invoca la función provista sobre esos elementos. Luego, vuelve a invocar
 > la misma función -- sólo que esta vez lo hace usando el resultado de la 
 > invocación anterior, junto con el siguiente elemento de la colección.
@@ -262,7 +262,7 @@ Funciones
 > `str` y `reduce`. Pero las funciones no necesitan nombres, de la misma 
 > manera que los valores no necesitan nombres.
 > A las funciones que no tienen nombre las llamamos *funciones anónimas*.
-> An anonymous function is created with `fn`, like so:
+> Una función anónima se crea con `fn`, de esta forma:
 {: ng-show="block201" .description}
 
 > Referencia: [Anonymous Function](http://clojurebridge.github.io/community-docs/docs/clojure/anonymous-function/)
@@ -378,7 +378,7 @@ Funciones
 ```clojure
 ;; function definition
 (defn opposite
-  "Data una coleción de nombres de tortugas, mueve dos de ella en direcciones diferentes."
+  "Dada una coleción de nombres de tortugas, mueve dos de ella en direcciones diferentes."
   [names]
   (let [t1 (first names)
         t2 (last names)]
