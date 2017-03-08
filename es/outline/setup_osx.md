@@ -17,7 +17,7 @@ Si nunca utilizaste la terminal anteriormente, tal vez quieras [leer lo básico 
 
 Ahora por favor ve y abre la terminal. Debería verse algo similiar a esto:
 
-![blank terminal](img/os_x/blank_terminal.png)
+![blank terminal](../../outline/img/os_x/blank_terminal.png)
 
 El prompt (dónde tipearas tus comandos) puede que luzca diferente: usualmente muestra el nombre de tu computadora y el nombre de usuario, ademas de la carpeta o directorio donde te encuentres actualmente.
 
@@ -69,7 +69,7 @@ Resultado esperado:
 Ejecuta `java -version` en tu terminal.  Si no tienes Java instalado, OS X te preguntará si deseas instalarlo (esto si tu version de OS X es 10.10 o más vieja). Sigue todas las instrucciones macOS te dará, luego retoma hasta esta parte del tutorial y ejecuta `java -version` nuevamente.
 
 Si Java está instalado, verás algo como esto en tu terminal:
-![Java version](img/os_x/java_version.png)
+![Java version](../../outline/img/os_x/java_version.png)
 
 Los detalles de la version de Java puede que sean diferentes de lo mostrado; está bien.
 
@@ -120,7 +120,7 @@ cd ~/Downloads/
 java -jar Nightcode-2.3.0.jar
 ```
 
-![Nightcode](img/nightcode-startup.png)
+![Nightcode](../../outline/img/nightcode-startup.png)
 
 ## Testea tu instalación
 
@@ -148,7 +148,7 @@ El inicio de esto puede llegar a tardar un buen rato la primera vez.
 Leiningen descarga las librerias necesarias para poder correr Clojure.
 Cuando Leinigen inicia, deberías ver el prompt `user =>` en tu terminal. 
 
-![Testing lein repl](img/os_x/testing-lein-repl.png)
+![Testing lein repl](../../outline/img/os_x/testing-lein-repl.png)
 
 Ahora estas lista para usar el __REPL__, el cual vas a aprender de el pronto.
 Es una terminal especial para Clojure.
@@ -168,7 +168,7 @@ git clone https://github.com/ClojureBridge/welcometoclojurebridge
 Esto clonará el repositorio `welcometoclojurebridge` el cual incluye aplicaciones Clojure de ejemplo.
 Tu terminal debería verse similar a lo siguiente:
 
-![Testing git clone](img/os_x/testing-git-clone.png)
+![Testing git clone](../../outline/img/os_x/testing-git-clone.png)
 
 Una vez que finalice, tipea los siguientes comandos en la misma terminal:
 
@@ -192,7 +192,7 @@ java -jar Nightcode-2.3.0.jar
 ```
 Al la derecha del final de la pantalla, typea `(+ 1 1)` en la ventana. Debería verse similar a la siguiente imagen:
 
-![Testing Nightcode](img/nightcode-repl.png)
+![Testing Nightcode](../../outline/img/nightcode-repl.png)
 
 Si puede ver el resultado, 2, eseto funcionó, genial! 
 
@@ -205,9 +205,9 @@ Arriba en la esquina izquierda, click "Import", luego busca el directorio,
 A la izquierda, en el arbol de directorio del proyecto, click en `src` - `welcometoclojurebridge` - `core.clj`. El archivo `core.clj` se abrirá del lado derecho.
 Eso es un programa Clojure.
 
-![Testeando apps - click import](img/nightcode-click-import.png)
-![Testeando apps - abre welcometoclojurebridge](img/nightcode-open-project.png)
-![Testeando apps - core.clj](img/nightcode-welcometoclojurebridge-core.png)
+![Testeando apps - click import](../../outline/img/nightcode-click-import.png)
+![Testeando apps - abre welcometoclojurebridge](../../outline/img/nightcode-open-project.png)
+![Testeando apps - core.clj](../../outline/img/nightcode-welcometoclojurebridge-core.png)
 
 El paso siguiente es correr el código mostrado en la ventana.
 Click "Run with REPL" al final.
@@ -216,13 +216,13 @@ Tal vez puedas ver lineas que comienzan con `Retrieving...` en tu pantalla.
 Eventualmente, el REPL comenzará y mostrará el prompt, `user=>`.
 Una vez que puedas ver el prompt, haz click en el boton "Reload".
 
-![Testeando apps - inicia REPL](img/nightcode-welcometoclojurebridge-run-with-repl.png)
-![Testeando apps - REPL iniciado](img/nightcode-repl-started.png)
-![Testeando apps - REPL recargado](img/nightcode-repl-reload.png)
+![Testeando apps - inicia REPL](../../outline/img/nightcode-welcometoclojurebridge-run-with-repl.png)
+![Testeando apps - REPL iniciado](../../outline/img/nightcode-repl-started.png)
+![Testeando apps - REPL recargado](../../outline/img/nightcode-repl-reload.png)
 
 Deberías podes ver un divertido mensaje de bienvenida.
 
-![Testeando apps - Bienvenida](img/testing-welcomeclojurebridge.png)
+![Testeando apps - Bienvenida](../../outline/img/testing-welcomeclojurebridge.png)
 
 #### Testeando apps - La tortuga camina.
 
@@ -233,8 +233,8 @@ En el arbol de directorio a tu izquierda, click en
 `walk.clj`. El archivo `walk.clj` se abrirá del lado derecho.
 Tal como inicimos anteriormente, click en el boton "Reoload"
 
-![Testeando apps - walk code](img/nightcode-turtle-walk.png)
-![Testeando apps - walk reload](img/nightcode-turtle-walk-reload.png)
+![Testeando apps - walk code](../../outline/img/nightcode-turtle-walk.png)
+![Testeando apps - walk reload](../../outline/img/nightcode-turtle-walk-reload.png)
 
 Una imagen de las aplicación turtles debería mostrarse.
 Un pequeño triangulo en el centro es la *tortuga* 
@@ -245,7 +245,7 @@ A small triangle on the center is the *turtle*.
 Tipea `(forward 40)` en el REPL al fondo de la pantalla.
 Deberías ver la tortuga moverse hacia adelante:
 
-![Testeando apps - forward](img/nightcode-turtle-forward-40.png)
+![Testeando apps - forward](../../outline/img/nightcode-turtle-forward-40.png)
 
 
 #### Exito!
