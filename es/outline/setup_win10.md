@@ -1,5 +1,5 @@
-Configuración en Ubuntu
-==========
+Configuración en Windows 10
+===============
 
 * Iniciar una terminal
 * Instalar Git
@@ -7,28 +7,44 @@ Configuración en Ubuntu
 * Instalar Java
 * Instalar Leiningen
 * Instalar Nightcode
-* Testear tu configuración
+* Probar todo
+* Problemas comunes
 
 ## Iniciando una terminal
 
-Para estas instrucciones, y para la mayor parte de la clase, vas a necesitar una terminal o línea de comandos. Esta es una interfaz basada en texto para "hablarle" a tu computadora. La podés abrir haciendo click en "Dash Home" y tipeando `Terminal`. También podés abrir una terminal en cualquier momento apretando `Ctrl-Alt-T`. Si nunca usaste una terminal antes, puede que convenga invertir algo de tiempo leyendo [lo básico acerca de la línea de comandos](http://blog.teamtreehouse.com/command-line-basics).
+Para estas instrucciones, y para la mayor parte de la clase, vas a necesitar una terminal o línea de comandos. Esta es una interfaz basada en texto para "hablarle" a tu computadora. Abrí el menú de "Inicio" y tipeá "cmd" para buscar la "Command Prompt" ("Símbolo de sistema" o "Terminal"). Abrila como en el screenshot:
 
-Ahora, andá y abrí tu primera terminal. Debería ser algo así como:
+![Iniciando una terminal](/outline/img/win10/starting-command-prompt.png)
 
-![terminal en blanco](/outline/img/ubuntu/blank_terminal.png)
+Cuando la abras tendrías que ver algo así:
 
-El símbolo de sistema (donde vas a tipear tus comandos) puede verse distinto en tu computadora: suele mostrar el nombre de la computadora y el nombre de usuario, junto con el directorio o carpeta en la cual estás.
+![Terminal](/outline/img/win10/command-prompt.png)
 
-Para completar la configuración, te voy a ir pidiendo que ejecutes comandos en tu terminal. Lo que quiere decir: "tipeá el comando `<X>` en la terminal y apretá la tecla `Enter`".
+Si nunca usaste una terminal antes, puede que convenga invertir algo de tiempo leyendo [lo básico acerca de la línea de comandos](http://dosprompt.info/). Para completar la configuración, te voy a ir pidiendo que ejecutes comandos en tu terminal. Lo que quiere decir: "tipeá el comando en la terminal y apretá la tecla `Enter`".
+
+En Windows a la terminal se la conoce también como consola de comandos y linea de comandos. Vamos a usar estos términos intercambiablemente.
 
 ## Instalando Git
 
-Mirá si ya tenés Git instalado con `git version`.
-Si el comando `git` no es encontrado, instalalo con este comando en la terminal:
+Primero fijate si ya tenes git instalado corriendo `git --version` en la terminal.
+Si no es el caso, descargalo de [la página git-scm.com](http://git-scm.com/download/win) y corré el instalador.
 
-```bash
-sudo apt-get install git
-```
+Cuando haya terminado la instalación, probá de nuevo el comando `git --version` en una terminal nueva. Si te devuelve la version, instaló bien.
+
+Si ves un mensaje que dice `'git' no se reconoce como un comando interno o externo`,
+probá seguir estos pasos para actualizar tu PATH adecuadamente:
+* Click-derecho en "Mi PC" y elegí "Propiedades".
+* Clickeá en la pestaña "Avanzado" y luego en el botón "Variables de Entorno".
+* Selecciona donde dice PATH y clickeá "Editar".
+* Vas a ver varias rutas del sistema separadas por `;`. Navegá hasta el final de este valor y fijate si hay una ruta que incluya `...\Git....`.
+* Si esta ruta existe:
+  * Clickeá "Aceptar" hasta cerrar la ventana de "Propiedades".
+  * Abrí otra terminal y probá el comando `git --version` de nuevo. Si no funciona, reiniciá y probá de nuevo.
+* Si la ruta no existe:
+  * Si no cambiaste donde instalar git durante la instalación, agregá ";C:\Program Files (x86)\Git\cmd" al final de la linea. No te olvides del punto y coma y de no dejar espacios entre las rutas.
+  * Clickeá "Aceptar" hasta cerrar la ventana de "Propiedades".
+  * Abrí otra terminal y probá el comando `git --version` de nuevo. Si no funciona, reiniciá y probá de nuevo.
+
 
 ## Configurando Git
 
@@ -55,57 +71,33 @@ Deberías obtener:
 
 ## Instalar Java
 
-Ubuntu viene con OpenJDK instalado.
-Sin embargo, las versiones más nuevas de Nightcode tienen un problema para correr sobre OpenJDK.
-Oracle JDK 8 es el mejor Java para usar nuestro material.
+Andá a [la web del instalador de Leiningen](http://leiningen-win-installer.djpowell.net/). Deberías ver dos links, uno para instalar Java y otro para "leiningen-win-installer.". Clickeá el link de Java. Tendrías que ver algo así:
 
-```bash
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update
-sudo apt-get install oracle-java8-installer
-(seguí las instrucciones)
-```
+![Primer página de la descarga Java](/outline/img/win/java-download1.png)
 
-A esta altura, ya tenés instalado Oracle JDK 8 en tu sistema Ubuntu.
-Hay un paso más para usar el Oracle JDK 8 que acabás de instalar.
+Clickeá el botón encima de "Java Platform (JDK)", como ves en la imagen. Luego llegarás a una página con la tabla siguiente:
 
-```bash
-sudo update-alternatives --config java
-(elegí /usr/lib/jvm/java-8-oracle/jre/bin/java)
-```
+![Segunda página de la descarga Java](/outline/img/win/java-download2.png)
 
-Ejecutá en tu terminal `java -version`. Deberías ver algo así como:
+Clickeá la opción de aceptar los términos, y descargá una de las dos opciones para Windows. Si tenés Windows 32-bit, descargá "Windows x86". Si tenés Windows 64-bit descargá "Windows x64".
 
-![versión de Java](/outline/img/ubuntu/ubuntu-java-version.png)
+Si no sabes que Windows tenés, abrí el menú Inicio y tipeá "system" y elegí "System". Tendrías que ver algo así:
 
-La versión menor puede diferir de la de arriba; sin embargo, tiene que ser `1.8.0`.
-Además, deberías ver `Java(TM) SE Runtime Environment`.
+![Propiedades de Mi PC](/outline/img/win10/system-properties.png)
 
+Acá podes ver que tipo de Windows tenés instalado donde dice "System Type."
 
-Otra opción es bajar el Java Development Kit (JDK) de Oracle desde
- [las descargas de Java SE](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
-En este caso, necesitás definir las variables de entorno `JAVA_HOME` y `PATH` luego de extraer el archivo.
+Una vez bajada la versión de Java que corresponde, corré el ejecutable y seguí las instrucciones.
 
 
 ## Instalando Leiningen
 
 Leiningen es una herramienta para administrar proyectos Clojure desde la terminal.
 
-Andá al [sitio de Leiningen](http://leiningen.org/). Vas a ver un enlace al script `lein` en la sección "Install" ("Instalación"). Pinchá en ese enlace con el botón secundario del ratón y elegí "Guardar enlace como...". Guardalo en tu directorio Descargas.
+> ver "Problemas Comunes" para probar otra forma
 
-![sitio de Leiningen](/outline/img/leiningen_site.png)
-![sitio de Leiningen](/outline/img/lein_install.png)
+Ahora, volvé a [la web del instalador de Leiningen](http://leiningen-win-installer.djpowell.net/) y descargá el "leiningen-win-installer". Correlo y seguí la sección "Detailed installation" en la web del instalador. Al final de la misma, dejá "Run a Clojure REPL" marcado antes de clickear "Finish". Si se abre una terminal como la que muestra la web, entonces estas listo para continuar.
 
-Luego de eso, ejecutá el siguiente comando en tu terminal. Se te va a pedir tu contraseña.
-
-```
-sudo mkdir -p /usr/local/bin/
-sudo mv ~/Descargas/lein* /usr/local/bin/lein
-sudo chmod a+x /usr/local/bin/lein
-export PATH=$PATH:/usr/local/bin
-```
-
-Luego de haber ejecutado los comandos de arriba, ejecutá el comando `lein version`. Va a tomar un rato, puesto que, como es la primera vez, va a bajar algunos recursos que necesita. Si lo completa correctamente, ¡genial!. Si no, pedile ayuda a una instructora o instructor.
 
 ## Instalando Nightcode
 
@@ -143,7 +135,7 @@ Abrí una terminal y ejecutá el siguiente comando:
 lein new miproyecto
 ```
 
-Esto va a crear un nuevo proyecta, `miproyecto`, que tiene archivos para armar un proyecto Clojure. Normalmente, hay código Clojure dentro de tal tipo de proyecto.
+Esto va a crear un nuevo proyecto, `miproyecto`, que tiene archivos para armar un proyecto Clojure. Normalmente, hay código Clojure dentro de tal tipo de proyecto.
 
 Ejecutá los siguientes comandos:
 
@@ -263,3 +255,10 @@ Deberías ver que la tortuga se movió hacia arriba.
 Si querés saber qué puede hacer la tortuga (*el triángulo chiquito*), mirá
 [La API de la aplicación Turtle](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md) y
 [How to Walk Turtles (Cómo hacer caminar tortugas)](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md).
+
+
+### Problemas comunes
+
+* El instalador de Leiningen para Windows tiene un problema donde no instala lein.bat correctamente. Esto hace que curl.exe falle al bajar archivos con el error debajo. Evitá este instalador, bajá lein.bat de leiningen.org y corré el auto-instalador.
+
+> error:0307A071:bignum routines:BN_rand_range:too many iterations.
