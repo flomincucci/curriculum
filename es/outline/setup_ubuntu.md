@@ -11,7 +11,7 @@ Configuración en Ubuntu
 
 ## Iniciando una terminal
 
-Para estas instrucciones, y para la mayor parte de la clase, vas a necesitar una terminal o línea de comandos. Esta es una interfaz basada en texto para "hablarle" a tu computadora. La podés abrir haciendo click en "Dash Home" y tipeando `Terminal`. También podés abrir una terminal en cuaquier momento apretando `Ctrl-Alt-T`. Si nunca usaste una terminal antes, puede que convenga invertir algo de tiempo leyendo [lo básico acerca de la línea de comandos](http://blog.teamtreehouse.com/command-line-basics).
+Para estas instrucciones, y para la mayor parte de la clase, vas a necesitar una terminal o línea de comandos. Esta es una interfaz basada en texto para "hablarle" a tu computadora. La podés abrir haciendo click en "Dash Home" y tipeando `Terminal`. También podés abrir una terminal en cualquier momento apretando `Ctrl-Alt-T`. Si nunca usaste una terminal antes, puede que convenga invertir algo de tiempo leyendo [lo básico acerca de la línea de comandos](http://blog.teamtreehouse.com/command-line-basics).
 
 Ahora, andá y abrí tu primera terminal. Debería ser algo así como:
 
@@ -42,7 +42,7 @@ git config --global user.email "Tu email"
 
 CONSEJO: Usá la misma dirección de mail para `git`, GitHub y `ssh`.
 
-Verificá que todo está bien tipieando lo siguiente en la terminal:
+Verificá que todo está bien tipeando lo siguiente en la terminal:
 
 `git config --get user.name`
 Deberías obtener:
@@ -89,9 +89,9 @@ En este caso, necesitás definir las variables de entorno `JAVA_HOME` y `PATH` l
 
 ## Instalando Leiningen
 
-Leiningen es una herrmienta para administrar proyectos Clojure desde la terminal.
+Leiningen es una herramienta para administrar proyectos Clojure desde la terminal.
 
-Andá al [sitio de Leiningen](http://leiningen.org/). Vas a ver un enlace al script `lein` en la sección "Install" ("Instalación"). Pinchá en ese enlace con el boton secundario del ratón y elegí "Guardar enlace como...". Guardalo en tu directorio Descargas.
+Andá al [sitio de Leiningen](http://leiningen.org/). Vas a ver un enlace al script `lein` en la sección "Install" ("Instalación"). Pinchá en ese enlace con el botón secundario del ratón y elegí "Guardar enlace como...". Guardalo en tu directorio Descargas.
 
 ![sitio de Leiningen](/outline/img/leiningen_site.png)
 ![sitio de Leiningen](/outline/img/lein_install.png)
@@ -105,7 +105,7 @@ sudo chmod a+x /usr/local/bin/lein
 export PATH=$PATH:/usr/local/bin
 ```
 
-Luego de haber ejecutado los comandos de arriba, ejecutá el comando `lein version`. Va a tomar un rato, puesto que, como es la primera vez, va a bajar algunos recursos que necesita. Si lo completa correctamente, ¡genial!. Si no, pedile ayuda a una instructora o instuctor.
+Luego de haber ejecutado los comandos de arriba, ejecutá el comando `lein version`. Va a tomar un rato, puesto que, como es la primera vez, va a bajar algunos recursos que necesita. Si lo completa correctamente, ¡genial!. Si no, pedile ayuda a una instructora o instructor.
 
 ## Instalando Nightcode
 
@@ -143,7 +143,7 @@ Abrí una terminal y ejecutá el siguiente comando:
 lein new miproyecto
 ```
 
-Esto va a crear un nuevo proyect, `miproyecto`, que tiene archivos para armar un proyecto Clojure. Normalmente, hay código Clojure dentro de tal tipo de proyecto.
+Esto va a crear un nuevo proyecta, `miproyecto`, que tiene archivos para armar un proyecto Clojure. Normalmente, hay código Clojure dentro de tal tipo de proyecto.
 
 Ejecutá los siguientes comandos:
 
@@ -208,7 +208,7 @@ Si muestra como resultado `2`, ¡genial!
 
 ### Testeando aplicaciones
 
-Ahora, vamos a abrir y ejecutar las aplicaciones Clojure de muestra en Nigthcode.
+Ahora, vamos a abrir y ejecutar las aplicaciones Clojure de muestra en Nightcode.
 En la esquina superior izquierda, pinchá en `[Import]` ("Importar"). Luego, encontrá el directorio `welcometoclojurebridge` creado cuando ejecutaste el comando `git clone`. Pinchá `[Open]` ("Abrir").
 En el árbol de directorios del proyecto de la izquierda, pinchá en `src` - `welcometoclojurebridge` - `core.clj`. El archivo `core.clj` se va a abrir en el lado derecho.
 Esto es un programa en Clojure.
@@ -219,7 +219,7 @@ Esto es un programa en Clojure.
 
 
 El siguiente paso es ejecutar el código que se muestra en la ventana.
-Pinchá abajo en `[Run with REPL]` ("Ejejutar con el REPL").
+Pinchá abajo en `[Run with REPL]` ("Ejecutar con el REPL").
 Puede que tome un tiempo.
 Eventualmente, el REPL va a arrancar y te va a mostrar un símbolo, `user=>`.
 Una vez que veas ese símbolo, pinchá en el botón `[Reload]` ("Recargar").
