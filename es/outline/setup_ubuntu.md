@@ -162,7 +162,7 @@ Es una terminal especial para Clojure.
 
 En el símbolo del REPL, tipeá `(+ 1 1)` y apretá 'Enter'. ¿Obtuviste como respuesta `2`? ¡Genial!
 
-Tu instalación de Leiningen parece bien. Por ahora, apretá las teclas ``Control` y `D` al mismo tiempo (abreviadas `Ctrl-D`). Esto te debería sacar del REPL de Clojure y de vuelta a tu símbolo de terminal normal. Luego, la terminal te va a mostrar: `user=> Bye for now!` ("¡Chau (por ahora)!")
+Tu instalación de Leiningen parece bien. Por ahora, apretá las teclas `Control` y `D` al mismo tiempo (abreviadas `Ctrl-D`). Esto te debería sacar del REPL de Clojure y de vuelta a tu símbolo de terminal normal. Luego, la terminal te va a mostrar: `user=> Bye for now!` ("¡Chau (por ahora)!")
 
 
 #### Clonando el repositorio GitHub
@@ -199,7 +199,7 @@ Si todavía no arrancaste Nightcode (o ya lo cerraste), abrilo tipeando el sigui
 java -jar Nightcode-2.1.0.jar
 ```
 
-El la ventana de la parte inferior de la pantalla, tipeá `(+ 1 1)`. Debería verse como en la siguiente imagen:
+En la ventana de la parte inferior de la pantalla, tipeá `(+ 1 1)`. Debería verse como en la siguiente imagen:
 
 ![Testeando Nightcode](/outline/img/nightcode-repl.png)
 
