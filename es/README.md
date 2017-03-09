@@ -17,11 +17,11 @@ Currícula
 * [Valores simples](outline/simple_values.md)
 * [Estructuras de Datos](outline/data_structures.md)
 * [Funciones](outline/functions.md)
-* [App Capstone: Dibujando líneas](https://github.com/ClojureBridge/drawing/blob/master/curriculum/first-program.md)
+* [App principal: Dibujando líneas](https://github.com/ClojureBridge/drawing/blob/master/curriculum/first-program.md)
 * [Control de Flujo y Lógica](outline/flow_control.md)
 * [[bonus] Secuencias](outline/sequences.md)
 
-Opciones de la App Capstone - Part. 2
+Alternativas para la App principal - Parte 2
 ----------------
 
     - [Turtles Walk](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) (más estudio de funciones)
