@@ -32,7 +32,7 @@ Please look at [README.md](README.md) instead. :green_heart: :blue_heart:
 * [Valores simples](outline/simple_values.html)
 * [Estructuras de Datos](outline/data_structures.html)
 * [Funciones](outline/functions.html)
-* [App [principal: Dibujando líneas](https://github.com/ClojureBridge/drawing/blob/master/curriculum/first-program.md)
+* [App [principal: Dibujando líneas](https://github.com/ClojureBridgeBA/drawing/blob/master/curriculum/first-program.md)
 * [Control de Flujo y Lógica](outline/flow_control.html)
 * [[bonus] Secuencias](outline/sequences.html)
 
@@ -40,7 +40,7 @@ Please look at [README.md](README.md) instead. :green_heart: :blue_heart:
 
     - [Turtles Walk](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) (más estudio de funciones)
 
-    - [Snowflakes](https://github.com/ClojureBridge/drawing/blob/master/curriculum/create-something.md) (animación)
+    - [Snowflakes](https://github.com/ClojureBridgeBA/drawing/blob/master/curriculum/create-something.md) (animación)
 
     - [Twinkle Twinkle Little Star](https://github.com/ClojureBridge/tones/blob/master/curriculum/01-piano-chords.md) (haciendo sonidos)
     - [Global Growth](https://github.com/ClojureBridge/global-growth)  (app web con una api REST)
