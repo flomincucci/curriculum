@@ -12,7 +12,7 @@ Configuración en Windows 10
 
 ## Iniciando una terminal
 
-Para estas instrucciones, y para la mayor parte de la clase, vas a necesitar una terminal o línea de comandos. Esta es una interfaz basada en texto para "hablarle" a tu computadora. Abrí el menú de "Inicio" y tipeá "cmd" para buscar la "Command Prompt" ("Símbolo de sistema" o "Terminal"). Abríla como en el screenshot:
+Para estas instrucciones, y para la mayor parte de la clase, vas a necesitar una terminal o línea de comandos. Esta es una interfaz basada en texto para "hablarle" a tu computadora. Abrí el menú de "Inicio" y tipeá "cmd" para buscar la "Command Prompt" ("Símbolo de sistema" o "Terminal"). Abrila como en el screenshot:
 
 ![Iniciando una terminal](/outline/img/win10/starting-command-prompt.png)
 
@@ -22,20 +22,20 @@ Cuando la abras tendrías que ver algo así:
 
 Si nunca usaste una terminal antes, puede que convenga invertir algo de tiempo leyendo [lo básico acerca de la línea de comandos](http://dosprompt.info/). Para completar la configuración, te voy a ir pidiendo que ejecutes comandos en tu terminal. Lo que quiere decir: "tipeá el comando en la terminal y apretá la tecla `Enter`".
 
-En windows a la terminal se la conoce también como consola de comandos y linea de comandos. Vamos a usar estos terminos intercambiablemente.
+En Windows a la terminal se la conoce también como consola de comandos y linea de comandos. Vamos a usar estos términos intercambiablemente.
 
-## Installing Git
+## Instalando Git
 
 Primero fijate si ya tenes git instalado corriendo `git --version` en la terminal.
 Si no es el caso, descargalo de [la página git-scm.com](http://git-scm.com/download/win) y corré el instalador.
 
-Cuando haya taerminado la instalación, probá de nuevo el comando `git --version` en una terminal nueva. Si te devuelve la version, instaló bien.
+Cuando haya terminado la instalación, probá de nuevo el comando `git --version` en una terminal nueva. Si te devuelve la version, instaló bien.
 
 Si ves un mensaje que dice `'git' no se reconoce como un comando interno o externo`,
 probá seguir estos pasos para actualizar tu PATH adecuadamente:
 * Click-derecho en "Mi PC" y elegí "Propiedades".
 * Clickeá en la pestaña "Avanzado" y luego en el botón "Variables de Entorno".
-* Selecciona donde dice PATH y clickea "Editar".
+* Selecciona donde dice PATH y clickeá "Editar".
 * Vas a ver varias rutas del sistema separadas por `;`. Navegá hasta el final de este valor y fijate si hay una ruta que incluya `...\Git....`.
 * Si esta ruta existe:
   * Clickeá "Aceptar" hasta cerrar la ventana de "Propiedades".
@@ -58,7 +58,7 @@ git config --global user.email "Tu email"
 
 CONSEJO: Usá la misma dirección de mail para `git`, GitHub y `ssh`.
 
-Verificá que todo está bien tipieando lo siguiente en la terminal:
+Verificá que todo está bien tipeando lo siguiente en la terminal:
 
 `git config --get user.name`
 Deberías obtener:
@@ -75,13 +75,13 @@ Andá a [la web del instalador de Leiningen](http://leiningen-win-installer.djpo
 
 ![Primer página de la descarga Java](/outline/img/win/java-download1.png)
 
-Clickeá el botón encima de "Java Platform (JDK)", como ves en la imágen. Luego llegarás a una página con la tabla siguiente:
+Clickeá el botón encima de "Java Platform (JDK)", como ves en la imagen. Luego llegarás a una página con la tabla siguiente:
 
 ![Segunda página de la descarga Java](/outline/img/win/java-download2.png)
 
 Clickeá la opción de aceptar los términos, y descargá una de las dos opciones para Windows. Si tenés Windows 32-bit, descargá "Windows x86". Si tenés Windows 64-bit descargá "Windows x64".
 
-Si no sabes que Windows tenés, abrí el menu Inicio y tipeá "system" y elegí "System". Tendrías que ver algo así:
+Si no sabes que Windows tenés, abrí el menú Inicio y tipeá "system" y elegí "System". Tendrías que ver algo así:
 
 ![Propiedades de Mi PC](/outline/img/win10/system-properties.png)
 
@@ -90,9 +90,9 @@ Acá podes ver que tipo de Windows tenés instalado donde dice "System Type."
 Una vez bajada la versión de Java que corresponde, corré el ejecutable y seguí las instrucciones.
 
 
-## Install Leiningen
+## Instalando Leiningen
 
-Leiningen es una herrmienta para administrar proyectos Clojure desde la terminal.
+Leiningen es una herramienta para administrar proyectos Clojure desde la terminal.
 
 > ver "Problemas Comunes" para probar otra forma
 
@@ -135,7 +135,7 @@ Abrí una terminal y ejecutá el siguiente comando:
 lein new miproyecto
 ```
 
-Esto va a crear un nuevo proyect, `miproyecto`, que tiene archivos para armar un proyecto Clojure. Normalmente, hay código Clojure dentro de tal tipo de proyecto.
+Esto va a crear un nuevo proyecto, `miproyecto`, que tiene archivos para armar un proyecto Clojure. Normalmente, hay código Clojure dentro de tal tipo de proyecto.
 
 Ejecutá los siguientes comandos:
 
@@ -200,7 +200,7 @@ Si muestra como resultado `2`, ¡genial!
 
 ### Testeando aplicaciones
 
-Ahora, vamos a abrir y ejecutar las aplicaciones Clojure de muestra en Nigthcode.
+Ahora, vamos a abrir y ejecutar las aplicaciones Clojure de muestra en Nightcode.
 En la esquina superior izquierda, pinchá en `[Import]` ("Importar"). Luego, encontrá el directorio `welcometoclojurebridge` creado cuando ejecutaste el comando `git clone`. Pinchá `[Open]` ("Abrir").
 En el árbol de directorios del proyecto de la izquierda, pinchá en `src` - `welcometoclojurebridge` - `core.clj`. El archivo `core.clj` se va a abrir en el lado derecho.
 Esto es un programa en Clojure.
@@ -211,7 +211,7 @@ Esto es un programa en Clojure.
 
 
 El siguiente paso es ejecutar el código que se muestra en la ventana.
-Pinchá abajo en `[Run with REPL]` ("Ejejutar con el REPL").
+Pinchá abajo en `[Run with REPL]` ("Ejecutar con el REPL").
 Puede que tome un tiempo.
 Eventualmente, el REPL va a arrancar y te va a mostrar un símbolo, `user=>`.
 Una vez que veas ese símbolo, pinchá en el botón `[Reload]` ("Recargar").
