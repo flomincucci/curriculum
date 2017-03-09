@@ -17,7 +17,7 @@ Currícula
 * [Valores simples](outline/simple_values.md)
 * [Estructuras de Datos](outline/data_structures.md)
 * [Funciones](outline/functions.md)
-* [App principal: Dibujando líneas](https://github.com/ClojureBridge/drawing/blob/master/curriculum/first-program.md)
+* [App principal: Dibujando líneas](https://github.com/ClojureBridgeBA/drawing/blob/master/curriculum/first-program.md)
 * [Control de Flujo y Lógica](outline/flow_control.md)
 * [[bonus] Secuencias](outline/sequences.md)
 
@@ -26,7 +26,7 @@ Alternativas para la App principal - Parte 2
 
     - [Turtles Walk](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) (más estudio de funciones)
 
-    - [Snowflakes](https://github.com/ClojureBridge/drawing/blob/master/curriculum/create-something.md) (animación)
+    - [Snowflakes](https://github.com/ClojureBridgeBA/drawing/blob/master/curriculum/create-something.md) (animación)
 
     - [Twinkle Twinkle Little Star](https://github.com/ClojureBridge/tones/blob/master/curriculum/01-piano-chords.md) (haciendo sonidos)
     - [Global Growth](https://github.com/ClojureBridge/global-growth)  (app web con una api REST)
@@ -40,7 +40,7 @@ Material de soporte
 Repositorios
 ------------
 * [welcometoclojurebridge](https://github.com/ClojureBridge/welcometoclojurebridge)
-* [drawing](https://github.com/ClojureBridge/drawing)
+* [drawing](https://github.com/ClojureBridgeBA/drawing)
 * [tones](https://github.com/ClojureBridge/tones)
 * [global-growth](https://github.com/ClojureBridge/global-growth)
 

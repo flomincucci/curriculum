@@ -106,7 +106,7 @@ clojure.lang.Keyword  clojure.lang.RT.seqFrom (RT.java:528)
 
 * [Turtles Walk](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) (más estudio de funciones)
     - sección 5 y posteriores
-* [Snowflakes](https://github.com/ClojureBridge/drawing/blob/master/curriculum/create-something.md) (animación)
+* [Snowflakes](https://github.com/ClojureBridgeBA/drawing/blob/master/curriculum/create-something.md) (animación)
     - paso 4 y siguientes
 * [Twinkle Twinkle Little Star](https://github.com/ClojureBridge/tones/blob/master/curriculum/01-piano-chords.md) (haciendo sonido)
     - función `chord` y más adelante
@@ -141,7 +141,7 @@ clojure.lang.Keyword  clojure.lang.RT.seqFrom (RT.java:528)
 
 * [Tortugas caminando](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) (más estudio de funciones)
     - sección 6 y siguientes
-* [Copos de nieve ](https://github.com/ClojureBridge/drawing/blob/master/curriculum/create-something.md) (animación)
+* [Copos de nieve ](https://github.com/ClojureBridgeBA/drawing/blob/master/curriculum/create-something.md) (animación)
     - paso 5-4 y siguientes
 * [Estrellita que brillas](https://github.com/ClojureBridge/tones/blob/master/curriculum/01-piano-chords.md) (haciendo sonidos)
     - sección Twinkle Little Star completa
