@@ -1,275 +1,264 @@
-Windows 8 Setup
+Configuración en Windows 10
 ===============
 
-* Start a command prompt
-* Install Git
-* Configure Git
-* Install Java
-* Install Leiningen
-* Install Nightcode
-* Test your setup
-* Troubleshooting
+* Iniciar una terminal
+* Instalar Git
+* Configurar Git
+* Instalar Java
+* Instalar Leiningen
+* Instalar Nightcode
+* Probar todo
+* Problemas comunes
 
-## Starting a command prompt
+## Iniciando una terminal
 
-For these instructions, and for much of the class, you will need to have a command prompt open. This is a text-based interface to talk to your computer. Go to the "Windows" screen (the "Start Screen") and type "command". Choose the "Command Prompt" program, like in this screenshot:
+Para estas instrucciones, y para la mayor parte de la clase, vas a necesitar una terminal o línea de comandos. Esta es una interfaz basada en texto para "hablarle" a tu computadora. Abrí el menú de "Inicio" y tipeá "cmd" para buscar la "Command Prompt" ("Símbolo de sistema" o "Terminal"). Abríla como en el screenshot:
 
-![Starting a command prompt](img/win8/starting-command-prompt.png)
+![Iniciando una terminal](/outline/img/win10/starting-command-prompt.png)
 
-When you choose "Command Prompt," your screen should look similar to this:
+Cuando la abras tendrías que ver algo así:
 
-![Command prompt](img/win8/command-prompt.png)
+![Terminal](/outline/img/win10/command-prompt.png)
 
-If you have never used the command prompt before, you may want to spend some time [reading up on command prompt basics](http://dosprompt.info/). For the rest of this setup, I will tell you to run commands in your command prompt. When I say that, I mean "type the command into the command prompt and press the Return key."
+Si nunca usaste una terminal antes, puede que convenga invertir algo de tiempo leyendo [lo básico acerca de la línea de comandos](http://dosprompt.info/). Para completar la configuración, te voy a ir pidiendo que ejecutes comandos en tu terminal. Lo que quiere decir: "tipeá el comando en la terminal y apretá la tecla `Enter`".
 
-On other operating systems, the command prompt is called the terminal. We will use the terms terminal, command prompt, and command line interchangably.
+En windows a la terminal se la conoce también como consola de comandos y linea de comandos. Vamos a usar estos terminos intercambiablemente.
 
 ## Installing Git
 
-See if you already have Git installed at the command prompt with the command `git --version`.
-If not, download it from the [git-scm.com Windows download page](http://git-scm.com/download/win) and run the executable to install.
+Primero fijate si ya tenes git instalado corriendo `git --version` en la terminal.
+Si no es el caso, descargalo de [la página git-scm.com](http://git-scm.com/download/win) y corré el instalador.
 
-After installation, try the `git --version` command in a new command prompt window. If you see a version number, git
-was installed correctly.
+Cuando haya taerminado la instalación, probá de nuevo el comando `git --version` en una terminal nueva. Si te devuelve la version, instaló bien.
 
-If you see a message that says, `'git' is not recognized as an internal or external command`,
-try these steps to update your PATH variable properly:
-* Right-click "My Computer" and select "Properties".
-* Click the "Advanced Tab" and then the "Environment Variables" button.
-* Highlight the PATH entry and click "Edit".
-* Scroll to the end of this value and check for a file path at the end that includes "...\Git...".
-* If that path existed:
-  * Click "Okay" until the "My Computer" dialog box is closed.
-  * Open a new command prompt window and try `git --version` again. If that does not succeed, restart your computer and
-    try again.
-* If that path did not exist:
-  * If you did not change the install location of git during installation, add ";C:\Program Files (x86)\Git\cmd" to the
-    end of the line. Make sure you add the semi-colon between file paths and the line includes no spaces between paths.
-  * Click "Okay" until the "My Computer" dialog box is closed.
-  * Open a new command prompt window and try `git --version` again. If that does not succeed, restart your computer and
-    try again.
+Si ves un mensaje que dice `'git' no se reconoce como un comando interno o externo`,
+probá seguir estos pasos para actualizar tu PATH adecuadamente:
+* Click-derecho en "Mi PC" y elegí "Propiedades".
+* Clickeá en la pestaña "Avanzado" y luego en el botón "Variables de Entorno".
+* Selecciona donde dice PATH y clickea "Editar".
+* Vas a ver varias rutas del sistema separadas por `;`. Navegá hasta el final de este valor y fijate si hay una ruta que incluya `...\Git....`.
+* Si esta ruta existe:
+  * Clickeá "Aceptar" hasta cerrar la ventana de "Propiedades".
+  * Abrí otra terminal y probá el comando `git --version` de nuevo. Si no funciona, reiniciá y probá de nuevo.
+* Si la ruta no existe:
+  * Si no cambiaste donde instalar git durante la instalación, agregá ";C:\Program Files (x86)\Git\cmd" al final de la linea. No te olvides del punto y coma y de no dejar espacios entre las rutas.
+  * Clickeá "Aceptar" hasta cerrar la ventana de "Propiedades".
+  * Abrí otra terminal y probá el comando `git --version` de nuevo. Si no funciona, reiniciá y probá de nuevo.
 
-If you've used Git before then you should already have user.name and user.email configured.
-Otherwise, type this in the command prompt:
 
-## Configure Git
+## Configurando Git
 
+Si ya has usado Git antes, ya deberías tener configurados los valores `user.name` y `user.email`.
+Si no, tipeá en la terminal:
+
+```bash
+git config --global user.name "Tu nombre"
+git config --global user.email "Tu email"
 ```
-git config --global user.name "Your Actual Name"
-git config --global user.email "Your Actual Email"
-```
-TIP: Use the same email address for git, github, and ssh.
 
-Verify by typing this in the command prompt:
+CONSEJO: Usá la misma dirección de mail para `git`, GitHub y `ssh`.
+
+Verificá que todo está bien tipieando lo siguiente en la terminal:
 
 `git config --get user.name`
-Expected result:
-`your name`
+Deberías obtener:
+`Tu nombre`
 
 `git config --get user.email`
-Expected result:
-`your email address`
+Deberías obtener:
+`Tu email`
 
 
-## Install Java
+## Instalar Java
 
-Go to [the Leiningen Windows installer site](http://leiningen-win-installer.djpowell.net/). You should see two links, one for installing Java and another for "leiningen-win-installer." Click the Java link. Then, you should see a screen like the following:
+Andá a [la web del instalador de Leiningen](http://leiningen-win-installer.djpowell.net/). Deberías ver dos links, uno para instalar Java y otro para "leiningen-win-installer.". Clickeá el link de Java. Tendrías que ver algo así:
 
-![First page of Java download](img/win/java-download1.png)
+![Primer página de la descarga Java](/outline/img/win/java-download1.png)
 
-Click the button above "Java Platform (JDK)," as you can see in the above picture. Then you will come to a page that will have the following table on it:
+Clickeá el botón encima de "Java Platform (JDK)", como ves en la imágen. Luego llegarás a una página con la tabla siguiente:
 
-![Second page of Java download](img/win/java-download2.png)
+![Segunda página de la descarga Java](/outline/img/win/java-download2.png)
 
-Click the radio button to accept the license agreement, and then download one of the two Windows choices. If you are running 32-bit Windows, choose "Windows x86." If you are running 64-bit Windows, choose "Windows x64."
+Clickeá la opción de aceptar los términos, y descargá una de las dos opciones para Windows. Si tenés Windows 32-bit, descargá "Windows x86". Si tenés Windows 64-bit descargá "Windows x64".
 
-If you do not know if you are running 32-bit or 64-bit Windows, go to the "Windows" screen (the "Start Screen") and type "system." Choose "System." (If that does not work, type "Control Panel" and choose "System" from the Control Panel screen.) You should see a window like the following:
+Si no sabes que Windows tenés, abrí el menu Inicio y tipeá "system" y elegí "System". Tendrías que ver algo así:
 
-![Windows My Computer properties](img/win8/system-properties.png)
+![Propiedades de Mi PC](/outline/img/win10/system-properties.png)
 
-You should see if you are running 32- or 64-bit Windows beside "System Type."
+Acá podes ver que tipo de Windows tenés instalado donde dice "System Type."
 
-Once you have downloaded the right Java version, run the executable you downloaded to install Java. Follow the installation wizard.
+Una vez bajada la versión de Java que corresponde, corré el ejecutable y seguí las instrucciones.
+
 
 ## Install Leiningen
 
-Leiningen is a tool used on the command line to manage Clojure projects.
+Leiningen es una herrmienta para administrar proyectos Clojure desde la terminal.
 
-> see troubleshooing for leiningen installation
+> ver "Problemas Comunes" para probar otra forma
 
-Next, go back to [the Leiningen Windows installer site](http://leiningen-win-installer.djpowell.net/) and download the file linked as "leiningen-win-installer." Run this executable and follow the "Detailed installation" section at the Leiningen Windows Installer site. At the end of the installation, leave "Run a Clojure REPL" checked before you click "Finish." If a terminal window opens that looks like the one on the Leiningen Windows installer site, then you are good to go.
-
-
-## Install Nightcode
-
-Go to the [Nightcode releaes site](http://github.com/oakes/Nightcode/releases).
-On the page there, you should see version numbers and links to download specific version of Nightcode, for example, Nightcode-2.1.0.jar.
-Click the link ending in `.jar` and you will download a file, `Nightcode-x.y.z.jar`.
-
-> Don't download platform specific binary releases.
-> Use jar archive.
-> Jar archive is much easier to get started.
-
-Once the download finished, we want to start the editor.
-To startup, go into your Downloads folder (or wherever you save files from your browser) and run the Nightcode-x.y.z.jar file using `java` command.
+Ahora, volvé a [la web del instalador de Leiningen](http://leiningen-win-installer.djpowell.net/) y descargá el "leiningen-win-installer". Correlo y seguí la sección "Detailed installation" en la web del instalador. Al final de la misma, dejá "Run a Clojure REPL" marcado antes de clickear "Finish". Si se abre una terminal como la que muestra la web, entonces estas listo para continuar.
 
 
-Open a command prompt and run the following commands:
+## Instalando Nightcode
+
+Andá al [sitio de descargas de Nightcode](http://github.com/oakes/Nightcode/releases).
+En esa página, deberías ver números de versión y enlaces para bajar versiones específicas de Nightcode (por ejemplo, `Nightcode-2.1.0.jar`).
+Pinchá en el enlace que termina en `.jar`; vas a bajar un archivo, `Nightcode-x.y.z.jar`.
+
+> Evitá bajar los binarios específicos para una plataforma.
+> Usá el archivo `.jar`.
+> Es mucho más fácil al comienzo.
+
+Una vez que la descarga haya terminado, iniciá el editor.
+Para eso, andá a tu carpeta `Descargas` (o donde sea que hayas grabado el archivo `Nightcode-x.y.z.jar` con tu navegador y ejecutalo con el comando `java`.
+
+
+Abrí una terminal y ejecutá los siguientes comandos:
 
 ```bash
-cd ~/Downloads/
+cd ~/Descargas/
 java -jar Nightcode-2.1.0.jar
 ```
 
-![Nightcode](img/nightcode-startup.png)
+![Nightcode](/outline/img/nightcode-startup.png)
 
 
-## Test your setup
+## Testeando tu configuración
 
-You have set up Java, Leiningen, Nightcode, and Git on your computer--all the tools you will need for this workshop. Before starting, we need to test them out.
+Ya configuraste en tu computadora Java, Leiningen, Nightcode y Git --todas las herramientas que vas a necesitar para este curso. Antes de continuar, hay que testearlas.
 
-#### Testing Leiningen
+#### Testeando Leiningen
 
-Open a new terminal and run the following command:
+Abrí una terminal y ejecutá el siguiente comando:
 
 ```bash
-lein new myproject
+lein new miproyecto
 ```
 
-This will create a new project, `myproject`, which has files to form a Clojure project.
-Normally, Clojure code exists within such Clojure project.
+Esto va a crear un nuevo proyect, `miproyecto`, que tiene archivos para armar un proyecto Clojure. Normalmente, hay código Clojure dentro de tal tipo de proyecto.
 
-Run following commands:
+Ejecutá los siguientes comandos:
+
 
 ```bash
-cd myproject
+cd miproyecto
 lein repl
 ```
 
-This may take long to start up for the first time.
-Leiningen downloads libraries it needs to run Clojure.
-When Leiningen starts, you'll see `user=>` prompt on your terminal.
+Puede que esto tome un rato para arrancar la primera vez. Leiningen baja bibliotecas que necesita para correr Clojure. Cuando Leiningen arranque, vas a ver el símbolo `user=>` en tu terminal.
 
-![Testing lein repl](img/win/testing-lein-repl.png)
+![Testeando lein repl](/outline/img/ubuntu/testing-lein-repl.png)
 
-Now, you are ready to use __REPL__, which we learn about soon.
-It's a special terminal for Clojure.
+Ahora, estás lista/o para usar el __REPL__, que vamos a aprender en un ratito.
+Es una terminal especial para Clojure.
 
-At the REPL prompt, type `(+ 1 1)` and press Return. Did you get the answer `2` back? Great!
+En el símbolo del REPL, tipeá `(+ 1 1)` y apretá 'Enter'. ¿Obtuviste como respuesta `2`? ¡Genial!
 
-Your leiningen install looks good. For now, press the Control button and D button on your keyboard together (abbreviated as Ctrl+D). This should take you out of the Clojure REPL and back to your normal terminal prompt. Then, the terminal will show you the following message: `user=> Bye for now!`
+Tu instalación de Leiningen parece bien. Por ahora, apretá las teclas `Control` y `D` al mismo tiempo (abreviadas `Ctrl-D`). Esto te debería sacar del REPL de Clojure y de vuelta a tu símbolo de terminal normal. Luego, la terminal te va a mostrar: `user=> Bye for now!` ("¡Chau (por ahora)!")
 
 
-#### Cloning out github repository
+#### Clonando el repositorio GitHub
 
-Go to your command prompt and run the following command:
-
+Abrí otra terminal y ejecutá el siguiente comando:
 
 ```bash
 git clone https://github.com/ClojureBridge/welcometoclojurebridge
 ```
 
-This will clone `welcometoclojurebridge` repository which includes sample Clojure apps.
-Your command prompt should look similar to this picture:
+Esto va a clonar el repositorio `welcometoclojurebridge` que incluye aplicaciones Clojure de muestra.
+Tu terminal debería verse parecido a esta imagen:
 
-![Testing git clone](img/win/testing-git-clone.png)
+![Testeando git clone](/outline/img/ubuntu/testing-git-clone.png)
 
-Once it finishes, type following commands on the same terminal.
+Una vez que termine, tipeá los siguientes comandos en la misma terminal.
 
 ```bash
 cd welcometoclojurebridge
-dir
+ls
 ```
 
-You'll see the list of folders/files like this:
+Vas a ver la lista de directorios/archivos, de esta manera:
 
 ```
 README.md       outline         project.clj     resources       src
 ```
 
+#### Testeando Nightcode
 
-#### Testing Nightcode
-
-If Nightcode isn't started yet or closed, open it by typing the command on the command propmt:
+Si todavía no arrancaste Nightcode (o ya lo cerraste), abrilo tipeando el siguiente comando en la terminal:
 
 ```bash
 java -jar Nightcode-2.1.0.jar
 ```
 
-At the bottom right of the screen, type `(+ 1 1)` into the window. It should look like the following image:
+En la ventana de la parte inferior de la pantalla, tipeá `(+ 1 1)`. Debería verse como en la siguiente imagen:
 
-![Testing Nightcode](img/nightcode-repl.png)
+![Testeando Nightcode](/outline/img/nightcode-repl.png)
 
-If you see the result, 2, that worked, great!
-
-
-#### Testing apps
-
-Now we will open and run the sample Clojure apps in Nightcode.
-On the top left corner, click "Import" then find the directory,
-`welcometoclojurebridge`, which was created when you ran
-`git clone` command. Click "Open."
-In the project directory tree on the left, click on `src` - `welcometoclojurebridge` - `core.clj`. The `core.clj` file will be opened on the right side.
-This is a Clojure program.
-
-![Testing apps - click import](img/nightcode-click-import.png)
-![Testing apps - open welcometoclojurebridge](img/nightcode-open-project.png)
-![Testing apps - core.clj](img/nightcode-welcometoclojurebridge-core.png)
+Si muestra como resultado `2`, ¡genial!
 
 
-The next step is to run the code shown in the window.
-Click "Run with REPL" on the bottom.
-It may take a while.
-Eventually, REPL will start and show a prompt, `user=>`.
-Once, you see the prompt, click "Reload" button.
+### Testeando aplicaciones
+
+Ahora, vamos a abrir y ejecutar las aplicaciones Clojure de muestra en Nigthcode.
+En la esquina superior izquierda, pinchá en `[Import]` ("Importar"). Luego, encontrá el directorio `welcometoclojurebridge` creado cuando ejecutaste el comando `git clone`. Pinchá `[Open]` ("Abrir").
+En el árbol de directorios del proyecto de la izquierda, pinchá en `src` - `welcometoclojurebridge` - `core.clj`. El archivo `core.clj` se va a abrir en el lado derecho.
+Esto es un programa en Clojure.
+
+![Testeando aplicaciones - pinchar en "Import" ("Importar")](/outline/img/nightcode-click-import.png)
+![Testeando aplicaciones - abrir welcometoclojurebridge](/outline/img/nightcode-open-project.png)
+![Testeando aplicaciones - core.clj](/outline/img/nightcode-welcometoclojurebridge-core.png)
 
 
-![Testing apps - start repl](img/nightcode-welcometoclojurebridge-run-with-repl.png)
-![Testing apps - repl started](img/nightcode-repl-started.png)
-![Testing apps - repl reload](img/nightcode-repl-reload.png)
+El siguiente paso es ejecutar el código que se muestra en la ventana.
+Pinchá abajo en `[Run with REPL]` ("Ejejutar con el REPL").
+Puede que tome un tiempo.
+Eventualmente, el REPL va a arrancar y te va a mostrar un símbolo, `user=>`.
+Una vez que veas ese símbolo, pinchá en el botón `[Reload]` ("Recargar").
 
 
-You should see a fun welcome message.
-
-![Testing apps - welcome](img/testing-welcomeclojurebridge.png)
-
-
-Let's try one more sample.
-In the directory tree on the left, click on
-`welcometoclojurebridge` - `src` - `clojurebridge-turtle` -
-`walk.clj`. The `walk.clj` file will open on the right side.
-Like we did before, click "Reload" button.
-
-![Testing apps - walk code](img/nightcode-turtle-walk.png)
-![Testing apps - walk reload](img/nightcode-turtle-walk-reload.png)
-
-An initial image of the turtles app should pop up.
-A small triangle on the center is the *turtle*.
+![Testeando aplicaciones - arrancar REPL](/outline/img/nightcode-welcometoclojurebridge-run-with-repl.png)
+![Testeando aplicaciones - REPL iniciado](/outline/img/nightcode-repl-started.png)
+![Testeando aplicaciones - recargar REPL](/outline/img/nightcode-repl-reload.png)
 
 
-Type `(forward 40)` on the repl at the bottom of the window.
-You should see the turtle moved upword:
+Deberías ver un mensaje de bienvenida gracioso.
 
-![Testing apps - forward](img/nightcode-turtle-forward-40.png)
+![Testeando aplicaciones - bienvenida](/outline/img/testing-welcomeclojurebridge.png)
+
+
+Probemos una muestra más.
+En el árbol de directorios de la izquierda, pinchá en `welcometoclojurebridge` - `src` - `clojurebridge-turtle` - `walk.clj`.
+El archivo `walk.clj` se va a abrir en el lado derecho.
+Como hicimos antes, pinchá el botón `[Reload]` ("Recargar").
+
+![Testeando aplicaciones - código walk](/outline/img/nightcode-turtle-walk.png)
+![Testeando aplicaciones - recargar walk](/outline/img/nightcode-turtle-walk-reload.png)
+
+
+Debería aparecer una imagen inicial de la aplicación `clojurebridge-turtle`.
+La *tortuga* es el triángulo chiquito en el centro.
+
+
+Tipeá `(forward 40)` en the REPL en la parte inferior de la ventana.
+Deberías ver que la tortuga se movió hacia arriba.
+
+![Testeando aplicaciones - forward](/outline/img/nightcode-turtle-forward-40.png)
 
 
 
-#### Success!
+#### ¡Éxito!
 
-Congratulations! You have opened and run your first Clojure apps, and
-your install and setup are all completed!
+¡Felicitaciones! Has abierto y ejecutado tu primera aplicación en Clojure.
+¡La instalación y configuración está lista!
+
+Si querés saber qué puede hacer la tortuga (*el triángulo chiquito*), mirá
+[La API de la aplicación Turtle](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md) y
+[How to Walk Turtles (Cómo hacer caminar tortugas)](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md).
 
 
-If you want to know what the turtle (*a small triangle*) can do,
-see [Turtle App API](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md) and
-[How to Walk Turtles](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) for more information.
+### Problemas comunes
 
-
-### Troubleshooting
-
-* Leiningen Windows Installer has an issue that it doesn't install
-  lein.bat correctly. This causes curl.exe to fail downloading files
-  with th error below. Skip the Leiningen Windows Installer. Download
-  lein.bat from leiningen.org and run self-installer.
+* El instalador de Leiningen para Windows tiene un problema donde no instala lein.bat correctamente. Esto hace que curl.exe falle al bajar archivos con el error debajo. Evitá este instalador, bajá lein.bat de leiningen.org y corré el auto-instalador.
 
 > error:0307A071:bignum routines:BN_rand_range:too many iterations.
