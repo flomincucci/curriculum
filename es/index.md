@@ -32,7 +32,7 @@ Please look at [README.md](README.md) instead. :green_heart: :blue_heart:
 * [Valores simples](outline/simple_values.html)
 * [Estructuras de Datos](outline/data_structures.html)
 * [Funciones](outline/functions.html)
-* [App [principal: Dibujando líneas](https://github.com/ClojureBridgeBA/drawing/blob/master/curriculum/first-program.md)
+* [App principal: Dibujando líneas](https://github.com/ClojureBridgeBA/drawing/blob/master/curriculum/first-program.md)
 * [Control de Flujo y Lógica](outline/flow_control.html)
 * [[bonus] Secuencias](outline/sequences.html)
 
