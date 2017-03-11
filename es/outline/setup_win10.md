@@ -101,7 +101,9 @@ Ahora, volvé a [la web del instalador de Leiningen](http://leiningen-win-instal
 
 ## Instalando Nightcode
 
-Andá al [sitio de descargas de Nightcode](http://github.com/oakes/Nightcode/releases).
+Andá al [sitio de descargas de Nightcode](https://sekao.net/nightcode/) y descargá la versión para windows. 
+
+Otra opción es bajar el archivo .jar desde el [repositorio github de Nightcode](http://github.com/oakes/Nightcode/releases).
 En esa página, deberías ver números de versión y enlaces para bajar versiones específicas de Nightcode (por ejemplo, `Nightcode-2.3.2.jar`).
 Pinchá en el enlace que termina en `.jar`; vas a bajar un archivo, `Nightcode-x.y.z.jar`.
 
