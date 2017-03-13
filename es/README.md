@@ -11,7 +11,7 @@ Guía de configuración
 
 Currícula
 ------
-<http://clojurebridgeba.github.io/curriculum/es>
+http://clojurebridgeba.github.io/curriculum/es
 
 * [Introducción a la Programación con Clojure](outline/intro.md)
 * [Valores simples](outline/simple_values.md)
@@ -24,14 +24,11 @@ Currícula
 Alternativas para la App principal - Parte 2
 ----------------
 
-    - [Turtles Walk](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) (más estudio de funciones)
-
-    - [Snowflakes](https://github.com/ClojureBridgeBA/drawing/blob/master/curriculum/create-something.md) (animación)
-
-    - [Twinkle Twinkle Little Star](https://github.com/ClojureBridge/tones/blob/master/curriculum/01-piano-chords.md) (haciendo sonidos)
-    - [Global Growth](https://github.com/ClojureBridge/global-growth)  (app web con una api REST)
-    - [Caesar Cipher](http://clojurebridge.github.io/community-docs/docs/exercises/caesar-cipher/)
-          (mini ejercicio de cadenas de texto y caracteres)
+* [Turtles Walk](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md) (más estudio de funciones)
+* [Snowflakes](https://github.com/ClojureBridgeBA/drawing/blob/master/curriculum/create-something.md) (animación)
+* [Twinkle Twinkle Little Star](https://github.com/ClojureBridge/tones/blob/master/curriculum/01-piano-chords.md) (haciendo sonidos)
+* [Global Growth](https://github.com/ClojureBridge/global-growth)  (app web con una api REST)
+* [Caesar Cipher](http://clojurebridge.github.io/community-docs/docs/exercises/caesar-cipher/) (mini ejercicio de cadenas de texto y caracteres)
 
 Material de soporte
 --------------------
