@@ -110,8 +110,8 @@ After you run the above commands, run the `lein version` command. It should take
 
 ## Install Nightcode
 
-Go to the [Nightcode releaes site](http://github.com/oakes/Nightcode/releases).
-On the page there, you should see version numbers and links to download specific version of Nightcode, for example, Nightcode-2.1.0.jar.
+Go to the [Nightcode releases site](http://github.com/oakes/Nightcode/releases).
+On the page there, you should see version numbers and links to download specific version of Nightcode, for example, Nightcode-2.3.2.jar.
 Click the link ending in `.jar` and you will download a file, `Nightcode-x.y.z.jar`.
 
 > Don't download platform specific binary releases.
@@ -126,7 +126,7 @@ Open a terminal and run the following commands:
 
 ```bash
 cd ~/Downloads/
-java -jar Nightcode-2.1.0.jar
+java -jar Nightcode-2.3.2.jar
 ```
 
 ![Nightcode](img/nightcode-startup.png)
@@ -199,7 +199,7 @@ README.md       outline         project.clj     resources       src
 If Nightcode isn't started yet or closed, open it by typing the command on terminal:
 
 ```bash
-java -jar Nightcode-2.1.0.jar
+java -jar Nightcode-2.3.2.jar
 ```
 
 At the bottom right of the screen, type `(+ 1 1)` into the window. It should look like the following image:
